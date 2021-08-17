@@ -1,5 +1,6 @@
-<!doctype html>
-<?php get_header();?>
+<?php get_header(); ?>
+
+
 <section class="box-slider">
     <div id="main-slider" class="owl-carousel owl-theme">
         <div class="item"><img src="<?php echo get_template_directory_uri(). '/img/1.jpg'?>"></div>
