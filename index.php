@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <?php wp_head(); ?>
     <title>First Project</title>
 </head>
 <body>
@@ -38,7 +36,7 @@
 <header class="header">
     <div class="container">
         <div class="logo">
-            <img src="img/logo.jpg">
+            <img src="<?php echo get_template_directory_uri(). '/img/logo.jpg'?>">
         </div>
         <nav class="main-menu">
             <ul>
@@ -75,8 +73,8 @@
 </header>
 <section class="box-slider">
     <div id="main-slider" class="owl-carousel owl-theme">
-        <div class="item"><img src="img/1.jpg"></div>
-        <div class="item"><img src="img/2.jpg"></div>
+        <div class="item"><img src="<?php echo get_template_directory_uri(). '/img/1.jpg'?>"></div>
+        <div class="item"><img src="<?php echo get_template_directory_uri(). '/img/2.jpg'?>"></div>
     </div>
 </section>
 
@@ -99,7 +97,7 @@
 
                     <a href="#">
                         <figure>
-                            <img src="img/3.jpg" >
+                            <img src="<?php echo get_template_directory_uri(). '/img/3.jpg'?>" >
                             <i class="fas fa-play-circle"></i>
                         </figure>
                     </a>
@@ -113,7 +111,7 @@
 
                     <a href="#">
                         <figure>
-                            <img src="img/other-videos1.jpg" >
+                            <img src="<?php echo get_template_directory_uri(). '/img/other-videos1.jpg'?>" >
                             <i class="fas fa-play"></i>
                             <h2>آموزش انگلیسی برای کودکان سه تا پنج سال</h2>
                         </figure>
@@ -453,5 +451,6 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
+<?php wp_footer(); ?>
 </body>
 </html>
