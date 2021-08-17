@@ -8,8 +8,14 @@ function add_theme_scripts() {
     wp_enqueue_script( 'owl.carousel.js', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), false, true);
     wp_enqueue_script( 'main.js', get_template_directory_uri() . '/js/main.js', array('jquery'), false, true);
 
-
-
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
-?>
+
+
+function mylingoteam_setup_theme () {
+    add_theme_support( feature: 'title-tag');
+    add_theme_support( feature: 'automatic-feed-links');
+
+}
+
+add_action('after_setup_theme','mylingoteam_setup_theme');

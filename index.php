@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="fa">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo(); ?> ">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <?php wp_head(); ?>
-    <title>First Project</title>
+
 </head>
 <body>
 <div class="top-menu">
