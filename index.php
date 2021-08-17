@@ -122,7 +122,7 @@
 
                     <a href="#">
                         <figure>
-                            <img src="img/other-videos2.jpg" >
+                            <img src="<?php echo get_template_directory_uri(). '/img/other-videos2.jpg'?>" >
                             <i class="fas fa-play"></i>
                             <h2>آموزش انگلیسی برای کودکان سه تا پنج سال</h2>
                         </figure>
@@ -133,7 +133,7 @@
 
                     <a href="#">
                         <figure>
-                            <img src="img/other-videos3.jpg" >
+                            <img src="<?php echo get_template_directory_uri(). '/img/other-videos3.jpg'?>" >
                             <i class="fas fa-play"></i>
                             <h2>آموزش انگلیسی برای کودکان سه تا پنج سال</h2>
                         </figure>
@@ -144,7 +144,7 @@
 
                     <a href="#">
                         <figure>
-                            <img src="img/other-videos4.jpg" >
+                            <img src="<?php echo get_template_directory_uri(). '/img/other-videos4.jpg'?>" >
                             <i class="fas fa-play"></i>
                             <h2>آموزش انگلیسی برای کودکان سه تا پنج سال</h2>
                         </figure>
@@ -181,7 +181,7 @@
                 <div id="articles-slider" class="owl-carousel owl-theme">
 
                     <div class="item article-box">
-                            <a href="#"><img src="img/article1.jpg">
+                            <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/article1.jpg'?>">
                             <h2>روش های خلاقانه تدریس زبان انگلیسی به کودکان</h2></a>
                             <p>کودکان کلاس خود را به چالش بکشید تا مسئولیت یادگیری خود را بر عهده بگیرند</p>
                             <div class="btn-more">
@@ -190,7 +190,7 @@
                     </div>
 
                     <div class="item article-box">
-                        <a href="#"><img src="img/article2.jpg">
+                        <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/article2.jpg'?>">
                             <h2>سه ترفند قدرتمند برای گرفتن بهترین نتیجه</h2></a>
                         <p>تفریح٬ سرگرمی و شادی فاکتورهای بسیار مهم در آموزش به کودکان می باشد</p>
                         <div class="btn-more">
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                     <div class="item article-box">
-                        <a href="#"><img src="img/article3.jpg">
+                        <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/article3.jpg'?>">
                             <h2>بازی های مناسب برای آموزش زبان به کودکان</h2></a>
                         <p>اگر یادگیری با سرگرمی و بازی همراه ‌شود کودکان نیز آن را جالب میدانند</p>
                         <div class="btn-more">
@@ -206,7 +206,7 @@
                         </div>
                     </div>
                     <div class="item article-box">
-                        <a href="#"><img src="img/article4.jpg">
+                        <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/article4.jpg'?>">
                             <h2>افزایش علاقه به یادگیری انگلیسی در کودکان</h2></a>
                         <p>آیا میدانستید کودکان در تعامل با والدین خود زبان را بهتر یاد میگیرند</p>
                         <div class="btn-more">
@@ -214,7 +214,7 @@
                         </div>
                     </div>
                     <div class="item article-box">
-                        <a href="#"><img src="img/article5.jpg">
+                        <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/article5.jpg'?>">
                             <h2>افزایش علاقه به یادگیری انگلیسی در کودکان</h2></a>
                         <p>آیا میدانستید کودکان در تعامل با والدین خود زبان را بهتر یاد میگیرند</p>
                         <div class="btn-more">
@@ -237,7 +237,7 @@
         </div>
         <div class="left-adv">
             <figure>
-                <img src="img/1.webp">
+                <img src="<?php echo get_template_directory_uri(). '/img/1.webp'?>">
             </figure>
 
         </div>
@@ -264,7 +264,7 @@
             <div id="course-slider" class="owl-carousel owl-theme">
 
                 <div class="item course-box">
-                    <a href="#"><img src="img/course1.jpg">
+                    <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/course1.jpg'?>">
                         <h2>آموزش گرامر انگلیسی به زبان ساده</h2></a>
                     <div class="description">
 
@@ -292,7 +292,7 @@
                     </div>
                 </div>
                 <div class="item course-box">
-                    <a href="#"><img src="img/course2.jpg">
+                    <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/course2.jpg'?>">
                         <h2>دوره آموزشی انگلیسی در سفر</h2></a>
                     <div class="description">
 
@@ -320,7 +320,7 @@
                     </div>
                 </div>
                 <div class="item course-box">
-                    <a href="#"><img src="img/course3.jpg">
+                    <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/course3.jpg'?>">
                         <h2>دوره مکالمه انگلیسی</h2></a>
                     <div class="description">
 
@@ -348,7 +348,7 @@
                     </div>
                 </div>
                 <div class="item course-box">
-                    <a href="#"><img src="img/course4.jpg">
+                    <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/course4.jpg'?>">
                         <h2>دوره ی خود آموز انگلیسی</h2></a>
                     <div class="description">
 
@@ -376,7 +376,7 @@
                     </div>
                 </div>
                 <div class="item course-box">
-                    <a href="#"><img src="img/course5.jpg">
+                    <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/course5.jpg'?>">
                         <h2>لغات کاربری انگلیسی</h2></a>
                     <div class="description">
 
