@@ -15,6 +15,12 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 function mylingoteam_setup_theme () {
     add_theme_support( feature: 'title-tag');
     add_theme_support( feature: 'automatic-feed-links');
+    register_nav_menus(
+        array(
+            'header-menu' => __( 'منوی اصلی' ),
+            'top-menu' => __( 'منوی نوار بالا' )
+        )
+    );
 
 }
 
