@@ -388,7 +388,7 @@ float: right;
 
 }
 .article-box {
-    height: 400px;
+    height: 450px;
     border: 1px solid #ccc;
     position: relative;
     border-radius: 12px;
@@ -411,8 +411,8 @@ float: right;
     font-size: 15px;
     color: #584949;
     text-align: center;
-    padding: 8px 14px;
-    display: inline-block;
+    padding: 8px 14px 0;
+    display: block;
 }
 
 .article-box h2:hover {
@@ -421,10 +421,12 @@ float: right;
 
 .article-box p {
     font-size: 13px;
-    padding: 12px;
     display: inline-block;
-    text-align: right;
+    text-align: justify;
     line-height: 2;
+    color: #777;
+    padding: 0 12px;
+    direction: rtl;
 }
 .article-box .btn-more {
     float: right;

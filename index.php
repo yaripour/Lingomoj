@@ -109,48 +109,26 @@
         </div>
         <div class="articles-slider">
                 <div id="articles-slider" class="owl-carousel owl-theme">
-
-                    <div class="item article-box">
-                            <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/article1.jpg'?>">
-                            <h2>روش های خلاقانه تدریس زبان انگلیسی به کودکان</h2></a>
-                            <p>کودکان کلاس خود را به چالش بکشید تا مسئولیت یادگیری خود را بر عهده بگیرند</p>
-                            <div class="btn-more">
-                                <a href="#">ادامه مطلب</a>
+                    <?php
+                    if ( have_posts() ) :
+                        while ( have_posts() ) : the_post();?>
+                            <div class="item article-box">
+                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(size:'article'); ?>
+                                    <h2><?php the_title() ?></h2></a>
+                                <p><?php the_excerpt() ?></p>
+                                <div class="btn-more">
+                                    <a href="<?php the_permalink(); ?>">ادامه مطلب</a>
+                                </div>
                             </div>
-                    </div>
+                        <?php
+                        endwhile;
+                    else :
+                        _e( 'Sorry, no posts were found.', 'textdomain' );
+                    endif;
+                    ?>
 
-                    <div class="item article-box">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/article2.jpg'?>">
-                            <h2>سه ترفند قدرتمند برای گرفتن بهترین نتیجه</h2></a>
-                        <p>تفریح٬ سرگرمی و شادی فاکتورهای بسیار مهم در آموزش به کودکان می باشد</p>
-                        <div class="btn-more">
-                            <a href="#">ادامه مطلب</a>
-                        </div>
-                    </div>
-                    <div class="item article-box">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/article3.jpg'?>">
-                            <h2>بازی های مناسب برای آموزش زبان به کودکان</h2></a>
-                        <p>اگر یادگیری با سرگرمی و بازی همراه ‌شود کودکان نیز آن را جالب میدانند</p>
-                        <div class="btn-more">
-                            <a href="#">ادامه مطلب</a>
-                        </div>
-                    </div>
-                    <div class="item article-box">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/article4.jpg'?>">
-                            <h2>افزایش علاقه به یادگیری انگلیسی در کودکان</h2></a>
-                        <p>آیا میدانستید کودکان در تعامل با والدین خود زبان را بهتر یاد میگیرند</p>
-                        <div class="btn-more">
-                            <a href="#">ادامه مطلب</a>
-                        </div>
-                    </div>
-                    <div class="item article-box">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/article5.jpg'?>">
-                            <h2>افزایش علاقه به یادگیری انگلیسی در کودکان</h2></a>
-                        <p>آیا میدانستید کودکان در تعامل با والدین خود زبان را بهتر یاد میگیرند</p>
-                        <div class="btn-more">
-                            <a href="#">ادامه مطلب</a>
-                        </div>
-                    </div>
+
+
 
                 </div>
         </div>

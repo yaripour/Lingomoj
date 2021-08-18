@@ -16,6 +16,7 @@ function mylingoteam_setup_theme () {
     add_theme_support( feature: 'title-tag');
     add_theme_support( feature: 'automatic-feed-links');
     add_theme_support(feature: 'post-thumbnails');
+    add_image_size(name:'article',width:291,height: 320, crop:true);
     register_nav_menus(
         array(
             'header-menu' => __( 'منوی اصلی' ),
@@ -26,3 +27,8 @@ function mylingoteam_setup_theme () {
 }
 
 add_action('after_setup_theme','mylingoteam_setup_theme');
+
+function custom_excerpt_lenght () {
+    return 30;
+}
+add_filter('excerpt_lenght','custom_excerpt_lenght',999);
