@@ -38,3 +38,5 @@ require_once 'inc/mylingo-video-posttype.php';
 require_once 'inc/mylingo-video-metabox.php';
 
 
+?>
+
