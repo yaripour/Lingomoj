@@ -9,90 +9,9 @@
 </section>
 
 
-<section class="tv">
-    <div class="container">
-        <div class="tv-head">
-            <div class="tv-titile">
-                <h2>مای لینگو تیم</h2>
-                <h5>ویدیوهای آموزشی</h5>
-
-            </div>
-            <div class="tv-link">
-                <a href="#">همه ویدیوها</a>
-            </div>
-        </div>
-        <div class="video-box">
-            <div class="right-videobox">
-                <div class="main-video">
-
-                    <a href="#">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri(). '/img/3.jpg'?>" >
-                            <i class="fas fa-play-circle"></i>
-                        </figure>
-                    </a>
-
-                </div>
-
-
-            </div>
-            <div class="left-videobox">
-                <div class="other-videos">
-
-                    <a href="#">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri(). '/img/other-videos1.jpg'?>" >
-                            <i class="fas fa-play"></i>
-                            <h2>آموزش انگلیسی برای کودکان سه تا پنج سال</h2>
-                        </figure>
-                    </a>
-
-                </div>
-                <div class="other-videos">
-
-                    <a href="#">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri(). '/img/other-videos2.jpg'?>" >
-                            <i class="fas fa-play"></i>
-                            <h2>آموزش انگلیسی برای کودکان سه تا پنج سال</h2>
-                        </figure>
-                    </a>
-
-                </div>
-                <div class="other-videos">
-
-                    <a href="#">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri(). '/img/other-videos3.jpg'?>" >
-                            <i class="fas fa-play"></i>
-                            <h2>آموزش انگلیسی برای کودکان سه تا پنج سال</h2>
-                        </figure>
-                    </a>
-
-                </div>
-                <div class="other-videos">
-
-                    <a href="#">
-                        <figure>
-                            <img src="<?php echo get_template_directory_uri(). '/img/other-videos4.jpg'?>" >
-                            <i class="fas fa-play"></i>
-                            <h2>آموزش انگلیسی برای کودکان سه تا پنج سال</h2>
-                        </figure>
-                    </a>
-
-                </div>
-                <div class="all-videos">
-                   <a href="#">تماشای همه ویدیوها</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</section>
-
-    <div class="line"></div>
-<div class="line"></div>
+<?php
+include_once 'inc/template/mylingovideos.php'
+?>
 
 
 <section class="articles">

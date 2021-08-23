@@ -265,7 +265,21 @@ position: relative;
 .video-box .right-videobox .main-video figure img {
 max-width: 100%;
 }
-.video-box .right-videobox .main-video figure i {
+.video-box .right-videobox .main-video figure span {
+    position: absolute;
+    left :0;
+    top: 0;
+    padding: 9px; 12px;
+    background: #c4c3c3;
+    color: #fcfcfc;
+    border-radius: 5px;
+}
+.video-box .right-videobox .main-video figure span > i {
+    padding-right: 7px;
+}
+
+
+.video-box .right-videobox .main-video figure > i {
     position: absolute;
     top: 37%;
     font-size: 80px;
@@ -275,11 +289,12 @@ max-width: 100%;
     transition: all .2s ease-in-out;
 
 }
-.video-box .right-videobox .main-video:hover i {
+.video-box .right-videobox .main-video:hover figure > i {
     top: 36%;
     left: 45%;
     font-size: 95px;
 }
+
 .video-box .left-videobox {
     float: left;
     width: 49%;
@@ -291,7 +306,7 @@ max-width: 100%;
     position: relative;
     margin: 0 18px 16px 0;
 }
-.left-videobox .other-videos:hover i {
+.left-videobox .other-videos:hover figure >i {
     color: #5caf21;
 }
 
@@ -307,7 +322,7 @@ max-width: 100%;
     max-width: 100%;
 
 }
-.left-videobox .other-videos a figure i {
+.left-videobox .other-videos a figure > i {
     position: absolute;
     top: 24%;
     font-size: 45px;
@@ -315,6 +330,18 @@ max-width: 100%;
     color: #fff;
     opacity: 0.9;
     transition: all .2s ease-in-out;
+}
+.video-box .left-videobox .other-videos figure span {
+    position: absolute;
+    left :0;
+    top: 0;
+    padding: 6px; 7px;
+    background: #c4c3c3;
+    color: #fcfcfc;
+    border-radius: 5px;
+}
+.video-box .left-videobox .other-videos figure span > i {
+    padding-right: 6px;
 }
 .left-videobox .other-videos a figure h2 {
     font-size: 14px;
