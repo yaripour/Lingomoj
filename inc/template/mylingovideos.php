@@ -7,7 +7,7 @@
 
             </div>
             <div class="tv-link">
-                <a href="#">همه ویدیوها</a>
+                <a href="<?php echo get_post_type_archive_link('mylingovideos') ?>">همه ویدیوها</a>
             </div>
         </div>
         <div class="video-box">
@@ -32,7 +32,7 @@
                                 <img src="<?php echo get_template_directory_uri().'/img/0.jpg' ?>"> <?php
                                     }
                                     ?>
-                            <i id="ss" class="fas fa-play-circle"></i>
+                            <i class="fas fa-play-circle"></i>
                             <?php
                             $time = get_post_meta(get_the_ID(), key: 'mylingo_video_tv_time', single: true);
                             if(!empty($time)){
@@ -42,7 +42,7 @@
                             }
                             ?>
 
-
+                            <h2><?php the_title(); ?></h2>
                         </figure>
                     </a>
 
@@ -58,7 +58,7 @@
                 <?php
                 $mainv = new WP_Query(array(
                     'post_type' => 'mylingovideos',
-                    'posts_per_page' => 4,
+                    'posts_per_page' => 6,
                     'offset' =>1,
                 ));
                 if ($mainv->have_posts()){
@@ -66,6 +66,7 @@
                 <div class="other-videos">
 
                     <a href="<?php the_permalink(); ?>">
+
                         <figure>
                             <?php
                             if (has_post_thumbnail()) {
@@ -97,7 +98,7 @@
                 ?>
 
                 <div class="all-videos">
-                    <a href="#">تماشای همه ویدیوها</a>
+                    <a href="<?php echo get_post_type_archive_link('mylingovideos') ?>">تماشای همه ویدیوها</a>
                 </div>
 
             </div>

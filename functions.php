@@ -18,7 +18,7 @@ function mylingoteam_setup_theme () {
     add_theme_support(feature: 'post-thumbnails');
     add_image_size(name:'article',width:291,height: 320, crop:true);
     add_image_size(name:'large_video_pic',width:600,height: 554, crop:true);
-    add_image_size(name:'small_video_pic',width:270,height: 180, crop:true);
+    add_image_size(name:'small_video_pic',width:270,height: 126, crop:true);
     register_nav_menus(
         array(
             'header-menu' => __( 'منوی اصلی' ),

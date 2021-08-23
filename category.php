@@ -6,7 +6,7 @@
 
             <section class="category-post">
                 <div class="category-head">
-                    <h4>آخرین مطالب از دسته <span style="color: #5caf21" >آموزش های انگلیسی</span></h4>
+                    <h4><span style="color: #5caf21" ><?php echo get_the_archive_title() ?></span></h4>
                 </div>
 
                 <?php
