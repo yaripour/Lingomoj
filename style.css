@@ -924,6 +924,43 @@ footer .copy-right {
     padding-right: 10px;
     color: #5caf21;
 }
+.single-widget input[type="text"],.single-widget input[type="email"],.single-widget input[type="password"],.single-widget input[type="tell"] {
+    width: 100%;
+    outline: 0;
+    padding: 11px 10px;
+    border: 1px solid #dcdcdc;
+    -webkit-box-shadow: 0 0 7px #e9efe9 inset;
+    box-shadow: 0 0 7px #e9efe9 inset;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    font-family: 'iransans';
+    margin-top: 10px;
+
+}
+.single-widget input[type="submit"] {
+    background-color: #5caf21;
+    border-radius: 5px;
+    padding: 5px 17px;
+    margin-top: 10px;
+    line-height: 27px;
+    display: inline-block;
+    /* -webkit-transition: all .2s ease-in-out; */
+    transition: all .2s ease-in-out;
+    color: #fff;
+    font-family: 'iransans';
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.single-widget select {
+    border: 1px solid #ddd;
+    padding:5px;
+}
+.single-widget .searchform label.screen-reader-text {
+    display: none;
+}
 .category-post .article-box {
     float: right;
     width: 31%;
@@ -1089,4 +1126,21 @@ footer .copy-right {
     background: #ecf0f1;
     color: #333;
     padding: 4px 15px;
+}
+#wp-calendar {
+    width: 100%;
+}
+#wp-calendar caption {
+    background: #5caf21;
+    color: #FFFFFF;
+}
+#wp-calendar tbody tr td a {
+    font-weight: bold;
+    border: 2px solid #5caf21 !important;
+    border-radius: 4px;
+    padding: 3px 3px;
+    text-decoration: none;
+    color: #000000;
+
+
 }

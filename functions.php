@@ -33,14 +33,20 @@ add_action('after_setup_theme','mylingoteam_setup_theme');
 function mylingo_widget() {
     register_sidebar( array(
         'name'          => __( 'ناحیه کناری بلاگ' ),
-        'id'            => 'sidebar-1',
-        'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'textdomain' ),
+        'id'            => 'mylingo_blog',
+      //  'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'textdomain' ),
         'before_widget' => '<div class="single-widget">',
         'after_widget'  => '</div>',
         'before_title'  => '<h4>',
         'after_title'   => '</h4>',
     ) );
 }
+// Disables the block editor from managing widgets in the Gutenberg plugin.
+add_filter( 'gutenberg_use_widgets_block_editor', '__return_false', 100 );
+
+// Disables the block editor from managing widgets. renamed from wp_use_widgets_block_editor
+add_filter( 'use_widgets_block_editor', '__return_false' );
+
 
 add_action( 'widgets_init', 'mylingo_widget' );
 
