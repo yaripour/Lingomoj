@@ -30,6 +30,20 @@ function mylingoteam_setup_theme () {
 
 add_action('after_setup_theme','mylingoteam_setup_theme');
 
+function mylingo_widget() {
+    register_sidebar( array(
+        'name'          => __( 'ناحیه کناری بلاگ' ),
+        'id'            => 'sidebar-1',
+        'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'textdomain' ),
+        'before_widget' => '<div class="single-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ) );
+}
+
+add_action( 'widgets_init', 'mylingo_widget' );
+
 function custom_excerpt_lenght () {
     return 30;
 }
