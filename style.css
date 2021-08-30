@@ -849,9 +849,17 @@ footer .copy-right {
 
 }
 .single-post .post-pic {
-    display: block;
-    margin: 20px 7px 30px;
 
+    display: block;
+    margin: 70px 7px 30px;
+
+
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 .single-post .post-pic img {
     max-width: 98%;
