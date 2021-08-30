@@ -40,6 +40,36 @@ function mylingo_widget() {
         'before_title'  => '<h4>',
         'after_title'   => '</h4>',
     ) );
+
+    register_sidebar( array(
+        'name'          => __( 'فوتر- ستون اول' ),
+        'id'            => 'footer_aboutus',
+        //  'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'textdomain' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'فوتر- ستون دوم' ),
+        'id'            => 'footer_quickaccess',
+        //  'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'textdomain' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'فوتر- ستون سوم' ),
+        'id'            => 'footer_contactus',
+        //  'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'textdomain' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ) );
 }
 // Disables the block editor from managing widgets in the Gutenberg plugin.
 add_filter( 'gutenberg_use_widgets_block_editor', '__return_false', 100 );

@@ -1,25 +1,22 @@
 <footer>
     <div class="container">
         <div class="about-us">
-            <h3>درباره ما</h3>
-            <p>گروه آموزشی زبان های خارجی my lingo team بر آن شد تا به یاری زبان آموزان عزیز آمده و با تشکیل گروهی حرفه ای از معلمان با سابقه و کلاسهایی با جدیدترین متد های آموزشی و همچنین فراهم کردن منابع آموزشی متعدد مسیر یادگیری را برای شما سهولت می بخشد . معلم زبان و کلاس مناسب خودتان را از گروه my lingo team انتخاب کنید و یادگیری لذت بخشی را شروع کنید .</p>
+            <?php if ( is_active_sidebar( 'footer_aboutus' ) ) {
+                dynamic_sidebar('footer_aboutus');
+            }
+            ?>
         </div>
         <div id="qa" class="quick-access">
-            <h3>دسترسی سریع</h3>
-            <ul>
-                <li><a href="#">معرفی مدرسین</a></li>
-                <li><a href="#">سوالات متداول</a></li>
-                <li><a href="#">قوانین و مقررات</a></li>
-                <li><a href="#">وبلاگ آموزشی</a></li>
-            </ul>
+            <?php if ( is_active_sidebar( 'footer_quickaccess' ) ) {
+                dynamic_sidebar('footer_quickaccess');
+            }
+            ?>
         </div>
         <div id="contact" class="quick-access">
-            <h3>تماس با ما</h3>
-            <ul>
-                <li><i class="fas fa-inbox"></i> <span>ایمیل: info@mylingoteam.com</span></li>
-                <li><i class="fas fa-mobile"></i><span>موبایل: 09383194723</span></li>
-               <li><i class="fas fa-home"></i><span>آدرس: رشت - بلوار انصاری</span></li>
-            </ul>
+            <?php if ( is_active_sidebar( 'footer_contactus' ) ) {
+                dynamic_sidebar('footer_contactus');
+            }
+            ?>
         </div>
 
     </div>

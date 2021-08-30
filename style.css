@@ -1141,6 +1141,17 @@ footer .copy-right {
     padding: 3px 3px;
     text-decoration: none;
     color: #000000;
+}
 
+.selected a {
+    border-bottom:3px solid #5caf21 !important;
 
+}
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+.wmt-smart-tabs .wmt-tabs-content .wmt-widget-title {
+    margin-top: 10px !important;
+    white-space: normal !important;
 }
