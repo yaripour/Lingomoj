@@ -42,20 +42,20 @@
                 endif;
                 ?>
                 <?php if ( comments_open() || get_comments_number() ) : ?>
-                <div class="clear"></div>
-                   <br><div class="comment-box">
-                    <div class="related-head">
-                        <h4>ثبت دیدگاه :</h4>
-                    </div>
-                    <?php
+                    <div class="clear"></div>
+                    <br><div class="comment-box">
+                        <div class="related-head">
+                            <h4>ثبت دیدگاه :</h4>
+                        </div>
+                        <?php
 
                         comments_template();
 
-                    ?>
+                        ?>
 
 
-                </div>
-<?php endif; ?>
+                    </div>
+                <?php endif; ?>
             </div>
 
         </div>

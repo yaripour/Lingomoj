@@ -42,6 +42,9 @@ body {
 a {
     transition: all .2s ease-in-out;
 }
+.clear {
+    clear: both;
+}
 .top-menu {
     width: 100%;
     float: right;
@@ -1162,4 +1165,31 @@ footer .copy-right {
 .wmt-smart-tabs .wmt-tabs-content .wmt-widget-title {
     margin-top: 10px !important;
     white-space: normal !important;
+}
+.searchbox {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+.searchbox input[type="text"] {
+    width: 100%;
+    background: #ecf0f1;
+    height: 81px;
+    font-size: 22px;
+    padding-right: 25px;
+    font-family: 'iransans';
+}
+.searchbox button {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    font-size: 35px;
+    color: #bdc3c7;
+    cursor: pointer;
+}
+.search-icon {
+    cursor: pointer;
 }
