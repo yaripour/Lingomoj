@@ -69,3 +69,10 @@ $('#related-slider').owlCarousel({
 
     autoplay:false,
 })
+
+
+$(document).ready(function (){
+    $('.search-icon').click(function (){
+        $('.searchbox').slideToggle();
+    })
+});

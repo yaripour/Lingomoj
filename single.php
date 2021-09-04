@@ -70,7 +70,7 @@ endif;
             </section>
             <div class="comment-box">
                 <div class="related-head">
-                    <h4>ثبت دیدگاه</h4>
+                    <h4>ثبت دیدگاه :</h4>
                 </div>
                 <?php
                 if ( comments_open() || get_comments_number() ) :

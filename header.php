@@ -22,8 +22,9 @@
         </div>
         <div class="topbar-left">
             <ul>
-                <li><i class="fas fa-search"></i></li>
+
                 <li><i class="fas fa-shopping-basket"></i></li>
+                <li class="search-icon"><i class="fas fa-search"></i> </li>
 
             </ul>
 
@@ -34,7 +35,7 @@
 
 </div>
 <header class="header">
-    <div class="container">
+    <div class="container relative">
         <div class="logo">
             <img src="<?php echo get_template_directory_uri(). '/img/logo.jpg'?>">
         </div>
@@ -44,10 +45,14 @@
         </nav>
         <div class="sign">
             <a href="#"><i class="fas fa-user-lock"></i>ورود/ثبت نام </a>
+        </div>
 
+        <div class="searchbox">
+            <form method="get" action="<?php home_url('/'); ?>">
+                <input type="text" name="s" value="<?php the_search_query(); ?>" placeholder="جستجو کنید...">
+                <button class="fas fa-search"></button>
+            </form>
         </div>
 
     </div>
-
-
 </header>

@@ -6,7 +6,7 @@
 
             <section class="category-post">
                 <div class="category-head">
-                    <h4>آخرین مطالب از<span style="color: #5caf21" ><?php echo get_the_archive_title() ?></span></h4>
+                    <h4>نتایج جستجو برای <span style="color: #5caf21" ><?php the_search_query(); ?></span></h4>
                 </div>
 
                 <?php
