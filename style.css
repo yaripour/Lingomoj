@@ -1196,3 +1196,20 @@ footer .copy-right {
 .relative {
     position: relative;
 }
+.main-pro {
+    width: 80%;
+}
+.product-title {
+    width: 100%;
+    float: right;
+    margin-bottom: 20px;
+}
+.product-title header h1 {
+    background: #fdfdfd;
+    padding: 17px;
+    color: #5caf21;
+    text-align: center;
+}
+.product-thumbnail {
+    margin-bottom: 20px;
+}
