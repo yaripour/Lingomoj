@@ -12,10 +12,26 @@
         </div>
         <div class="course-slider">
             <div id="course-slider" class="owl-carousel owl-theme">
+                <?php
+                $pro = new WP_Query(array(
+                    'post_type' => 'product',
+                    'posts_per_page' => 5,
+
+                ));
+                if ($pro->have_posts()){
+                while ($pro->have_posts()) : $pro->the_post();?>
 
                 <div class="item course-box">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/course1.jpg'?>">
-                        <h2>آموزش گرامر انگلیسی به زبان ساده</h2></a>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php
+                        if (has_post_thumbnail()) {
+                            the_post_thumbnail('product');
+                        }
+                        else {
+                            ?><img src="<?php echo get_template_directory_uri().'/img/0.jpg' ?>"> <?php
+                        }
+                        ?>
+                        <h2><?php the_title(); ?></h2></a>
                     <div class="description">
 
                         <div class="teacher">
@@ -41,122 +57,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="item course-box">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/course2.jpg'?>">
-                        <h2>دوره آموزشی انگلیسی در سفر</h2></a>
-                    <div class="description">
 
-                        <div class="teacher">
-                            <span>یاری پور</span>
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="price">
-                            <del>730,000</del>
-                            <ins>580,000</ins>
-                        </div>
-                        <div class="users">
-                            <i class="fas fa-users"></i>28
-                        </div>
-                    </div>
-                </div>
-                <div class="item course-box">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/course3.jpg'?>">
-                        <h2>دوره مکالمه انگلیسی</h2></a>
-                    <div class="description">
-
-                        <div class="teacher">
-                            <span>یاری پور</span>
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="price">
-                            <del>1,650,000</del>
-                            <ins>1,280,000</ins>
-                        </div>
-                        <div class="users">
-                            <i class="fas fa-users"></i>22
-                        </div>
-                    </div>
-                </div>
-                <div class="item course-box">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/course4.jpg'?>">
-                        <h2>دوره ی خود آموز انگلیسی</h2></a>
-                    <div class="description">
-
-                        <div class="teacher">
-                            <span>یاری پور</span>
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="price">
-                            <del>1,650,000</del>
-                            <span>رایگان</span>
-                        </div>
-                        <div class="users">
-                            <i class="fas fa-users"></i>48
-                        </div>
-                    </div>
-                </div>
-                <div class="item course-box">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(). '/img/course5.jpg'?>">
-                        <h2>لغات کاربری انگلیسی</h2></a>
-                    <div class="description">
-
-                        <div class="teacher">
-                            <span>یاری پور</span>
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div class="price">
-                            <del>1,650,000</del>
-                            <ins>1,280,000</ins>
-                        </div>
-                        <div class="users">
-                            <i class="fas fa-users"></i>18
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+            <?php
+            endwhile;
+            }
+            wp_reset_postdata();
+            ?>
         </div>
     </div>
-
+    </div>
 </section>
