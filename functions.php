@@ -90,6 +90,8 @@ function custom_excerpt_lenght () {
 }
 add_filter('excerpt_lenght','custom_excerpt_lenght',999);
 
+// حذف محصولات مرتبط از بین محصولات
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 require_once 'inc/mylingo-video-posttype.php';
 require_once 'inc/mylingo-video-metabox.php';
