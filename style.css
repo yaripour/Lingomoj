@@ -1275,3 +1275,60 @@ footer .copy-right {
 .related-product ul li a.button {
     display: none !important;
 }
+
+
+/******podcasts**********/
+.latest-podcast-box .left-podcasts figure img{
+    float: left;
+    width: 30%;
+    border-radius: 151px;
+}
+.latest-podcast-box .left-podcasts figure {
+
+}
+.latest-podcast-box .right-podcasts other-podcasts a{
+    float: right;
+    width: 67%;
+    border-radius: 151px;
+}
+.right-podcasts .other-podcasts {
+    float: right;
+    width: 28%;
+    position: relative;
+    margin: 0 18px 16px 0;
+}
+
+
+.right-podcasts .other-podcasts a {
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+
+}
+.right-podcasts .other-podcasts h2 {
+    font-size: 14px;
+    text-align: center;
+    color: #444;
+/*    padding: 3px 100px 0px;*/
+
+
+}
+
+.tv .tv-head .podcast-link {
+    float: left;
+    margin-top: 5px;
+
+
+}
+.tv .tv-head .podcast-link a{
+    border: #f1c40f solid 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #f1c40f;
+    padding: 5px 64px;
+    margin-left: 50px;
+}
+.tv .tv-head .podcast-link a:hover{
+    background: #f1c40f;
+    color: #ffffff;
+}

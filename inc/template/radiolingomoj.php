@@ -6,88 +6,35 @@
                 <h5>پادکست های لینگوموج</h5>
 
             </div>
-            <div class="radio-link">
-                <a href="<?php echo get_post_type_archive_link('lingomojradio') ?>">همه ویدیوها</a>
+            <div class="podcast-link">
+                <a href="<?php echo get_post_type_archive_link('radiolingomoj') ?>">شنیدن همه پادکست ها</a>
             </div>
         </div>
-        <div class="video-box">
-            <div class="right-videobox">
-
-                    <?php
-                    $mainv = new WP_Query(array(
-                       'post_type' => 'lingomojradio',
-                       'posts_per_page' => 1,
-                    ));
-                    if ($mainv->have_posts()){
-                      while ($mainv->have_posts()) : $mainv->the_post();?>
-                         <div class="main-video">
-                    <a href="<?php the_permalink(); ?>">
-                        <figure>
-                            <?php
-                            if (has_post_thumbnail()) {
-                            the_post_thumbnail('large_video_pic');
-                            }
-                            else {
-                            ?>
-                                <img src="<?php echo get_template_directory_uri().'/img/0.jpg' ?>"> <?php
-                                    }
-                                    ?>
-                            <i class="fas fa-play-circle"></i>
-                            <?php
-                            $time = get_post_meta(get_the_ID(), key: 'mylingo_video_tv_time', single: true);
-                            if(!empty($time)){
-                                ?>
-                                <span><?php echo $time; ?><i class="fas fa-play"></i></span>
-                                <?php
-                            }
-                            ?>
-
-                            <h2><?php the_title(); ?></h2>
-                        </figure>
-                    </a>
-
-                </div>
-                <?php
-                    endwhile;
-                }
-                wp_reset_postdata();
-                ?>
-
+        <div class="latest-podcast-box">
+            <div class="left-podcasts">
+                <figure>
+                    <img src="<?php echo get_template_directory_uri().'/img/radiomoj.png' ?>">
+                </figure>
             </div>
-            <div class="left-videobox">
+
+            <div class="right-podcasts">
                 <?php
                 $mainv = new WP_Query(array(
-                    'post_type' => 'mylingovideos',
-                    'posts_per_page' => 6,
-                    'offset' =>1,
+                    'post_type' => 'radiolingomoj',
+                    'posts_per_page' => 4,
+
                 ));
                 if ($mainv->have_posts()){
                 while ($mainv->have_posts()) : $mainv->the_post();?>
-                <div class="other-videos">
+                <div class="other-podcasts">
 
                     <a href="<?php the_permalink(); ?>">
 
-                        <figure>
-                            <?php
-                            if (has_post_thumbnail()) {
-                                the_post_thumbnail('small_video_pic');
-                            }
-                            else {
-                                ?>
-                                <img src="<?php echo get_template_directory_uri().'/img/0.jpg' ?>"> <?php
-                            }
-                            ?>
-                            <i class="fas fa-play"></i>
-                            <?php
-                            $time = get_post_meta(get_the_ID(), key: 'mylingo_video_tv_time', single: true);
-                            if(!empty($time)){
-                                ?>
-                                <span><?php echo $time; ?><i class="fas fa-play"></i></span>
-                                <?php
-                            }
-                            ?>
-                            <h2><?php the_title(); ?></h2>
-                        </figure>
+
+                    <audio controls>
+                        <source src="http://localhost/lingomoj/wp-content/uploads/2021/09/mihanenglish_eslpod_0250.mp3" type="audio/mpeg">
+                    </audio>
+                    <h2><?php the_title(); ?></h2>
                     </a>
 
                 </div>
@@ -97,9 +44,7 @@
                 wp_reset_postdata();
                 ?>
 
-                <div class="all-videos">
-                    <a href="<?php echo get_post_type_archive_link('mylingovideos') ?>">تماشای همه ویدیوها</a>
-                </div>
+
 
             </div>
         </div>
