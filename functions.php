@@ -12,7 +12,7 @@ function add_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
 
-function mylingoteam_setup_theme () {
+function lingomoj_setup_theme () {
     add_theme_support( feature: 'title-tag');
     add_theme_support( feature: 'automatic-feed-links');
     add_theme_support(feature: 'post-thumbnails');
@@ -33,7 +33,7 @@ function mylingoteam_setup_theme () {
 
 }
 
-add_action('after_setup_theme','mylingoteam_setup_theme');
+add_action('after_setup_theme','lingomoj_setup_theme');
 
 function mylingo_widget() {
     register_sidebar( array(
@@ -94,6 +94,7 @@ add_filter('excerpt_lenght','custom_excerpt_lenght',999);
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 require_once 'inc/mylingo-video-posttype.php';
+require_once 'inc/lingomoj-radio-posttype.php';
 require_once 'inc/mylingo-video-metabox.php';
 require_once 'inc/product-video-metabox.php';
 

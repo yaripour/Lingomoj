@@ -1,14 +1,14 @@
 /*
-Theme Name: مای لینگو تیم
-Text Domain: mylingoteam.com
+Theme Name: لینگوموج
+Text Domain: lingomoj.ir
 Version: 2.8
 Requires at least: 4.7
 Requires PHP: 7.1.4
-Description:  قالب مای لینگو تیم یک قالب آموزشی و مناسب آموزش زبان است که به راحتی می توانید توسط آن کلاس های آنلاین خود را برگزارکنید.
+Description:  قالب لینگوموج یک قالب آموزشی و مناسب آموزش زبان است که به راحتی می توانید توسط آن کلاس های آنلاین خود را برگزارکنید.
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks, accessibility-ready
 Author: منیر یاری پور
 Author URI: https://wordpress.org/
-Theme URI: https://wordpress.org/themes/mylingoteam/
+Theme URI: https://wordpress.org/themes/lingomoj/
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,7 +48,7 @@ a {
 .top-menu {
     width: 100%;
     float: right;
-    background: forestgreen;
+    background: #f1c40f;
 }
 .container {
     max-width: 1200px;
@@ -149,7 +149,7 @@ a {
     font-weight: normal;
 }
 .main-menu ul li ul li a:hover {
-    background: #5caf21;
+    background: #f1c40f;
     color: #fff;
 }
 .main-menu > ul > li:hover ul {
@@ -176,7 +176,7 @@ margin-left: 7px;
     font-size: 17px;
 }
 .sign a:hover {
-    background: #5caf21;
+    background: #f1c40f;
 }
 .box-slider {
     float: right;
@@ -240,15 +240,15 @@ margin-left: 7px;
 
 }
 .tv .tv-head .tv-link a{
-    border: #5caf21 solid 2px;
+    border: #f1c40f solid 2px;
     border-radius: 5px;
     text-decoration: none;
-    color: #5caf21;
+    color: #f1c40f;
     padding: 5px 10px;
     margin-left: 50px;
 }
 .tv .tv-head .tv-link a:hover{
-    background: #5caf21;
+    background: #f1c40f;
     color: #ffffff;
 }
 .video-box {
@@ -325,7 +325,7 @@ max-width: 100%;
     margin: 0 18px 16px 0;
 }
 .left-videobox .other-videos:hover figure >i {
-    color: #5caf21;
+    color: #f1c40f;
 }
 
 .left-videobox .other-videos a {
@@ -378,7 +378,7 @@ max-width: 100%;
 }
 .all-videos a {
     text-align: center;
-    background: #5caf21;
+    background: #f1c40f;
     border-radius: 5px;
     text-decoration: none;
     padding: 5px;
@@ -417,15 +417,15 @@ max-width: 100%;
 
 }
 .articles .articles-head .articles-link a{
-    border: #5caf21 solid 2px;
+    border: #f1c40f solid 2px;
     border-radius: 5px;
     text-decoration: none;
-    color: #5caf21;
+    color: #f1c40f;
     padding: 5px 10px;
     margin-left: 50px;
 }
 .articles .articles-head .articles-link a:hover{
-    background: #5caf21;
+    background: #f1c40f;
     color: #ffffff;
 }
 .articles-slider {
@@ -466,7 +466,7 @@ max-width: 100%;
 }
 
 .article-box h2:hover {
-    color: #5caf21;
+    color: #f1c40f;
 }
 
 .article-box p {
@@ -494,7 +494,7 @@ max-width: 100%;
     color: black;
 }
 .article-box:hover .btn-more a {
-    background: #5caf21;
+    background: #f1c40f;
     color: #ffffff;
 }
 .articles-slider .owl-carousel .owl-nav button.owl-next, .articles-slider .owl-carousel .owl-nav button.owl-prev {
@@ -531,7 +531,7 @@ max-width: 100%;
     left: -18px;
 }
 .articles-slider .owl-theme .owl-dots .owl-dot.active span {
-    background: #5caf21 !important;
+    background: #f1c40f !important;
     width: 20px;
     transition: all .4s ease-in-out;
 }
@@ -609,15 +609,15 @@ max-width: 100%;
 
 }
 .course .course-head .course-link a{
-    border: #5caf21 solid 2px;
+    border: #f1c40f solid 2px;
     border-radius: 5px;
     text-decoration: none;
-    color: #5caf21;
+    color: #f1c40f;
     padding: 5px 10px;
     margin-left: 50px;
 }
 .course .course-head .course-link a:hover{
-    background: #5caf21;
+    background: #f1c40f;
     color: #ffffff;
 }
 .course-slider {
@@ -651,7 +651,7 @@ max-width: 100%;
     display: inline-block;
 }
 .course-box h2:hover {
-    color: #5caf21;
+    color: #f1c40f;
 }
 .course-box .description {
     display: flex;
@@ -696,7 +696,7 @@ max-width: 100%;
 
 }
 .course-box .details .price ins {
-    color: #29ca4a;
+    color: #f1c40f;
     margin-left: 4px;
     text-decoration: none;
     padding: 2px 12px 0;
@@ -748,7 +748,7 @@ footer .quick-access {
     line-height: 35px;
 }
 #qa li {
-    color: #5caf21;
+    color: #f1c40f;
     list-style-type: circle;
 
 }
@@ -762,7 +762,7 @@ footer .quick-access {
 }
 .quick-access i {
     font-size: 16px;
-    color: #5caf21;
+    color: #f1c40f;
     margin-left: 10px;
 
 }
@@ -772,7 +772,7 @@ footer .quick-access {
 footer .copy-right {
     float: right;
     width: 100%;
-    background: #5caf21;
+    background: #f1c40f;
     color: #e8e8e8;
 
 }
@@ -841,7 +841,7 @@ footer .copy-right {
 }
 
 .single-post .postmeta i {
-    color: #5caf21;
+    color: #f1c40f;
     margin-left:4px ;
 
 
@@ -917,7 +917,7 @@ footer .copy-right {
 }
 .single-widget h4 {
     font-size: 18px;
-    border-bottom: 1px solid #5caf21;
+    border-bottom: 1px solid #f1c40f;
     padding-bottom: 10px;
     margin-bottom: 10px;
 
@@ -933,7 +933,7 @@ footer .copy-right {
 }
 .single-widget ul li a:hover {
     padding-right: 10px;
-    color: #5caf21;
+    color: #f1c40f;
 }
 .single-widget input[type="text"],.single-widget input[type="email"],.single-widget input[type="password"],.single-widget input[type="tell"] {
     width: 100%;
@@ -951,7 +951,7 @@ footer .copy-right {
 
 }
 .single-widget input[type="submit"] {
-    background-color: #5caf21;
+    background-color: #f1c40f;
     border-radius: 5px;
     padding: 5px 17px;
     margin-top: 10px;
@@ -1005,7 +1005,7 @@ footer .copy-right {
     border-radius: 4px;
 }
 .pagination span.current {
-    background: #5acf21;
+    background: #f1c40f;
     color: #fff;
     text-decoration: none;
     padding: 5px 14px;
@@ -1077,7 +1077,7 @@ footer .copy-right {
     margin-top: 20px;
 }
 .comment-respond input[type="submit"] {
-    background-color: #5caf21;
+    background-color: #f1c40f;
     border-radius: 5px;
     padding: 10px 17px;
     line-height: 27px;
@@ -1142,12 +1142,12 @@ footer .copy-right {
     width: 100%;
 }
 #wp-calendar caption {
-    background: #5caf21;
+    background: #f1c40f;
     color: #FFFFFF;
 }
 #wp-calendar tbody tr td a {
     font-weight: bold;
-    border: 2px solid #5caf21 !important;
+    border: 2px solid #f1c40f !important;
     border-radius: 4px;
     padding: 3px 3px;
     text-decoration: none;
@@ -1155,7 +1155,7 @@ footer .copy-right {
 }
 
 .selected a {
-    border-bottom:3px solid #5caf21 !important;
+    border-bottom:3px solid #f1c40f !important;
 
 }
 .sidebar a {
@@ -1207,7 +1207,7 @@ footer .copy-right {
 .product-title header h1 {
     background: #fdfdfd;
     padding: 17px;
-    color: #5caf21;
+    color: #f1c40f;
     text-align: center;
 }
 .product-thumbnail {
@@ -1229,7 +1229,7 @@ footer .copy-right {
     overflow: hidden;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
-    border: 2px solid #5caf21 !important;
+    border: 2px solid #f1c40f !important;
     border-bottom: none !important;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
@@ -1237,7 +1237,7 @@ footer .copy-right {
     border: 0 !important;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs::before {
-    border-bottom: 2px solid #5caf21 !important;
+    border-bottom: 2px solid #f1c40f !important;
 }
 .related-product {
     float: right;
@@ -1251,7 +1251,7 @@ footer .copy-right {
 .related-product h4 {
     padding: 10px 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #5caf21;
+    border-bottom: 1px solid #f1c40f;
     font-size: 20px;
 }
 .related-product h2 {

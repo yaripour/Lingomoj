@@ -1,18 +1,18 @@
 <?php
 // register post type
-function post_type_mylingoteam_videos() {
+function post_type_lingomoj_radio() {
 $labels = array(
-'name'               => __( 'تماشاخانه' ),
-'singular_name'      => __( 'تماشاخانه' ),
-'menu_name'          => __( 'تماشاخانه' ),
-'name_admin_bar'     => __( 'تماشاخانه' ),
+'name'               => __( 'رادیو لینگوموج' ),
+'singular_name'      => __( 'رادیو لینگوموج' ),
+'menu_name'          => __( 'رادیو لینگوموج' ),
+'name_admin_bar'     => __( 'رادیو لینگوموج' ),
 'add_new'            => __( ' افزودن جدید' ),
-'add_new_item'       => __( 'پست مخصوص ویدیوهای آموزشی' ),
+'add_new_item'       => __( 'پست مخصوص پادکست لینگوموج' ),
 'new_item'           => __( 'پست جدید' ),
 'edit_item'          => __( 'ویرایش پست' ),
 'view_item'          => __( 'مشاهده پست' ),
-'all_items'          => __( 'همه ویدیوها' ),
-'search_items'       => __( 'جستجو در بین ویدیوها' ),
+'all_items'          => __( 'همه پادکست ها' ),
+'search_items'       => __( 'جستجو در بین پادکست ها' ),
 'parent_item_colon'  => __( 'مادر' ),
 'not_found'          => __( 'مطلب یافت نشد' ),
 'not_found_in_trash' => __( 'مطلب در زباله دان یافت نشد' )
@@ -34,14 +34,14 @@ $args = array(
 //'taxonomies' => array('post_tag'),
 'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
 );
-register_post_type( 'mylingovideos', $args );
+register_post_type( 'radiolingomoj', $args );
 }
-add_action( 'init', 'post_type_mylingoteam_videos' );
+add_action( 'init', 'post_type_lingomoj_radio' );
 
 
 
 // اضافه کردن تاکسونومی برای پست تایپ مای لینگو
-function create_taxonomies_for_mylingo_videos() {
+function create_taxonomies_for_lingomoj_radio() {
 $labels = array(
 'name'              => _x( 'دسته بندی', 'دسته بندی' ),
 'singular_name'     => _x( 'دسته بندی پست ها ', 'دسته بندی' ),
@@ -64,6 +64,6 @@ $ar = array(
 'query_var'         => true,
 );
 
-register_taxonomy( 'cat_mylingo_videos', 'mylingovideos' , $ar );
+register_taxonomy( 'cat_lingomoj_radio', 'radiolingomoj' , $ar );
 }
-add_action( 'init', 'create_taxonomies_for_mylingo_videos');
+add_action( 'init', 'create_taxonomies_for_lingomoj_radio');

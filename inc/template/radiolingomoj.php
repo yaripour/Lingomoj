@@ -2,12 +2,12 @@
     <div class="container">
         <div class="tv-head">
             <div class="tv-titile">
-                <h2>تماشاخانه</h2>
-                <h5>ویدیوهای لینگوموج</h5>
+                <h2>رادیو لینگوموج</h2>
+                <h5>پادکست های لینگوموج</h5>
 
             </div>
-            <div class="tv-link">
-                <a href="<?php echo get_post_type_archive_link('mylingovideos') ?>">همه ویدیوها</a>
+            <div class="radio-link">
+                <a href="<?php echo get_post_type_archive_link('lingomojradio') ?>">همه ویدیوها</a>
             </div>
         </div>
         <div class="video-box">
@@ -15,7 +15,7 @@
 
                     <?php
                     $mainv = new WP_Query(array(
-                       'post_type' => 'mylingovideos',
+                       'post_type' => 'lingomojradio',
                        'posts_per_page' => 1,
                     ));
                     if ($mainv->have_posts()){

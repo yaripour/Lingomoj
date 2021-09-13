@@ -12,7 +12,9 @@
 <?php
 include_once 'inc/template/mylingovideos.php'
 ?>
-
+<?php
+include_once 'inc/template/radiolingomoj.php'
+?>
 
 <section class="articles">
     <div class="container">
