@@ -13,8 +13,8 @@
     <div class="container">
         <div class="topbar-right">
             <ul>
-                <li><i class="fas fa-phone"></i>مشاوره و پشتیبانی واتس اپ: 09383194723</li>
-                <li><i class="fas fa-envelope"></i>ایمیل: info@siteskin.ir</li>
+                <li><i class="fas fa-phone"></i>مشاوره و پشتیبانی واتس اپ: 09119303327</li>
+                <li><i class="fas fa-envelope"></i>ایمیل: info@lingomoj.ir</li>
 
             </ul>
 
@@ -37,7 +37,7 @@
 <header class="header">
     <div class="container relative">
         <div class="logo">
-            <img src="<?php echo get_template_directory_uri(). '/img/logo.jpg'?>">
+            <img src="<?php echo get_template_directory_uri(). '/img/logo-lingomoj.jpg'?>">
         </div>
         <nav class="main-menu">
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => '') );

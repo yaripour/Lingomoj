@@ -2,8 +2,8 @@
     <div class="container">
         <div class="course-head">
             <div class="course-titile">
-                <h2>دوره های ویژه</h2>
-                <h5>دوره ها</h5>
+                <h2>بازار</h2>
+                <h5>فروش فایل های آموزشی</h5>
 
             </div>
             <div class="course-link">

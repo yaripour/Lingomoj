@@ -1,7 +1,7 @@
 <?php
 // register post type
 function post_type_lingomoj_radio() {
-$labels = array(
+$labels2 = array(
 'name'               => __( 'رادیو لینگوموج' ),
 'singular_name'      => __( 'رادیو لینگوموج' ),
 'menu_name'          => __( 'رادیو لینگوموج' ),
@@ -17,8 +17,8 @@ $labels = array(
 'not_found'          => __( 'مطلب یافت نشد' ),
 'not_found_in_trash' => __( 'مطلب در زباله دان یافت نشد' )
 );
-$args = array(
-'labels'             => $labels,
+$args2 = array(
+'labels'             => $labels2,
 'description'        => __( 'Description.', 'your-plugin-textdomain' ),
 'public'             => true,
 'publicly_queryable' => true,
@@ -34,7 +34,7 @@ $args = array(
 //'taxonomies' => array('post_tag'),
 'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
 );
-register_post_type( 'radiolingomoj', $args );
+register_post_type( 'radiolingomoj', $args2 );
 }
 add_action( 'init', 'post_type_lingomoj_radio' );
 
@@ -42,7 +42,7 @@ add_action( 'init', 'post_type_lingomoj_radio' );
 
 // اضافه کردن تاکسونومی برای پست تایپ مای لینگو
 function create_taxonomies_for_lingomoj_radio() {
-$labels = array(
+$labels2 = array(
 'name'              => _x( 'دسته بندی', 'دسته بندی' ),
 'singular_name'     => _x( 'دسته بندی پست ها ', 'دسته بندی' ),
 'search_items'      => __( 'جستجویه دسته' ),
@@ -56,14 +56,14 @@ $labels = array(
 'menu_name'         => __( 'دسته بندی' ),
 );
 
-$ar = array(
+$ar2 = array(
 'hierarchical'      => true,
-'labels'            => $labels,
+'labels'            => $labels2,
 'show_ui'           => true,
 'show_admin_column' => true,
 'query_var'         => true,
 );
 
-register_taxonomy( 'cat_lingomoj_radio', 'radiolingomoj' , $ar );
+register_taxonomy( 'cat_lingomoj_radio', 'radiolingomoj' , $ar2 );
 }
 add_action( 'init', 'create_taxonomies_for_lingomoj_radio');

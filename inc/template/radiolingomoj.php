@@ -2,7 +2,7 @@
     <div class="container">
         <div class="tv-head">
             <div class="tv-titile">
-                <h2>رادیو لینگوموج</h2>
+                <h2>رادیو</h2>
                 <h5>پادکست های لینگوموج</h5>
 
             </div>
@@ -11,31 +11,52 @@
             </div>
         </div>
         <div class="latest-podcast-box">
-            <div class="left-podcasts">
-                <figure>
-                    <img src="<?php echo get_template_directory_uri().'/img/radiomoj.png' ?>">
-                </figure>
-            </div>
 
+            <div class="podcast-box">
+                <div class="left-podcasts">
+                    <figure>
+
+                        <i class="fas fa-podcast"></i>
+                    </figure>
+                </div>
             <div class="right-podcasts">
                 <?php
-                $mainv = new WP_Query(array(
+                $podc = get_post_meta(get_the_ID(), key: 'lingomoj_radio', single: true);
+                $attr = array(
+                    'src' => $podc,
+                    'loop'   => 'off',
+
+                );
+
+                $mainr = new WP_Query(array(
                     'post_type' => 'radiolingomoj',
-                    'posts_per_page' => 4,
+                    'posts_per_page' => 6,
 
                 ));
-                if ($mainv->have_posts()){
-                while ($mainv->have_posts()) : $mainv->the_post();?>
+
+                if ($mainr->have_posts()){
+                while ($mainr->have_posts()) : $mainr->the_post();?>
                 <div class="other-podcasts">
 
-                    <a href="<?php the_permalink(); ?>">
-
-
-                    <audio controls>
-                        <source src="http://localhost/lingomoj/wp-content/uploads/2021/09/mihanenglish_eslpod_0250.mp3" type="audio/mpeg">
+                    <audio controls class="pod-player">
+                        <source src="<?php echo wp_audio_shortcode($attr);?>
                     </audio>
-                    <h2><?php the_title(); ?></h2>
-                    </a>
+
+
+                <div class="details">
+                        <div class="title-p">
+                            <h2><?php the_title(); ?></h2>
+                        </div>
+                    <div class="dl-p">
+                        <i class="fas fa-download"></i>
+
+                    </div>
+
+                </div>
+
+
+
+
 
                 </div>
                 <?php
@@ -49,6 +70,7 @@
             </div>
         </div>
     </div>
+
 
 </section>
 

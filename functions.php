@@ -95,6 +95,7 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_r
 
 require_once 'inc/mylingo-video-posttype.php';
 require_once 'inc/lingomoj-radio-posttype.php';
+require_once 'inc/radiolingomoj-metabox.php';
 require_once 'inc/mylingo-video-metabox.php';
 require_once 'inc/product-video-metabox.php';
 
