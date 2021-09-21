@@ -1460,3 +1460,68 @@ footer .copy-right {
 
     width: 100%;
 }
+
+/***********فهرت جلسات دوره*********/
+
+.lesson-course {
+    float: right;
+    width: 100%;
+    background: #E0E0E0;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+}
+.lesson-course ul li {
+    list-style: none;
+}
+.lesson-course ul li h4 {
+    padding: 20px;
+    cursor: pointer;
+    border-top: 1px solid #cac7c7;
+}
+.lesson-course ul li h4 i {
+    float: left;
+    font-size: 25px;
+    color: #666;
+}
+.lesson-course ul li ul {
+    margin: 0 30px 20px;
+    display: none;
+}
+.lesson-course ul li ul .meta-course {
+    float: right;
+    width: 100%;
+    background: #63AFBF;
+    color: #fff;
+    padding: 10px;
+    font-size: 17px;
+}
+.lesson-course ul li ul .meta-course .time-course {
+    float: right;
+}
+.lesson-course ul li ul .meta-course .time-course i{
+
+}
+.lesson-course ul li ul .meta-course .dl-course {
+    float: left;
+}
+.lesson-course ul li ul .meta-course .dl-course a {
+    color: #fff;
+    text-decoration: none;
+    /* background: #2ecc71; */
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+.lesson-course ul li ul .meta-course .dl-course a i {
+    padding: 4px;
+}
+.lesson-course ul li ul li {
+    padding: 15px;
+    background: #f8f8fa;
+    border-top: 1px solid #d5d7dd;
+    cursor: pointer;
+    font-size: 16px;
+}
+.lesson-course ul li ul li i {
+    color: #828282;
+}

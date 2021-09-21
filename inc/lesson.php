@@ -1,12 +1,12 @@
 <?php
 
-add_action( 'cmb2_admin_init', 'cmb2_pishro_metabox_product_lessson' );
+add_action( 'cmb2_admin_init', 'cmb2_lingomoj_metabox_product_lessson' );
 
-function cmb2_pishro_metabox_product_lessson()
+function cmb2_lingomoj_metabox_product_lessson()
 {
 
     $lesson_pro = new_cmb2_box(array(
-        'id' => 'pishro_product_metabox_lesson',
+        'id' => 'lingomoj_product_metabox_lesson',
         'title' => __('فهرست جلسات دوره', 'cmb2'),
         'object_types' => array('product'), // Post type
         'context' => 'normal',
@@ -15,7 +15,7 @@ function cmb2_pishro_metabox_product_lessson()
     ));
 
     $group_course = $lesson_pro->add_field( array(
-        'id'          => 'pishro_group_lesson',
+        'id'          => 'lingomoj_group_lesson',
         'type'        => 'group',
         'options'     => array(
             'group_title'       => __( 'سرفصل' ), // since version 1.1.4, {#} gets replaced by row number
@@ -29,7 +29,7 @@ function cmb2_pishro_metabox_product_lessson()
 
     $lesson_pro->add_group_field( $group_course, array(
         'name' => 'عنوان سرفصل',
-        'id'   => 'pishro_course_chapter_title',
+        'id'   => 'lingomoj_course_chapter_title',
         'type' => 'text',
         'attributes' => array(
             'placeholder' => 'فصل اول - آموزش وردپرس',
@@ -37,16 +37,16 @@ function cmb2_pishro_metabox_product_lessson()
     ) );
     $lesson_pro->add_group_field( $group_course, array(
         'name' => 'لینک دانلود کل فصل',
-        'id'   => 'pishro_course_chapter_link',
+        'id'   => 'lingomoj_course_chapter_link',
         'type' => 'text',
         'attributes' => array(
-            'placeholder' => 'dl.websoft3.com/video/file.zip',
+            'placeholder' => 'dl.lingomoj.com/video/file.zip',
         ),
     ) );
 
     $lesson_pro->add_group_field( $group_course, array(
         'name' => 'مدت زمان  فصل',
-        'id'   => 'pishro_course_chapter_time',
+        'id'   => 'lingomoj_course_chapter_time',
         'type' => 'text',
         'attributes' => array(
             'placeholder' => 'مثلا 2 ساعت و 40 دقیقه',
@@ -55,7 +55,7 @@ function cmb2_pishro_metabox_product_lessson()
 
     $lesson_pro->add_group_field( $group_course, array(
         'name' => 'عنوان درس را وارد کنید',
-        'id'   => 'pishro_course_chapter_lesson',
+        'id'   => 'lingomoj_course_chapter_lesson',
         'type' => 'text',
         'attributes' => array(
             'placeholder' => 'درس 1',
