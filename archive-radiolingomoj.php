@@ -10,16 +10,56 @@
                 </div>
 
                 <?php
+                                $podc = get_post_meta(get_the_ID(), key: 'lingomoj_radio', single: true);
+
+                                if(!empty($podc)){
+                                    $attr = array(
+                                        'src' => $podc,
+                                        'loop'   => 'on',
+                                        'width'=> '90%',
+
+
+
+
+                                    );
+
+                                } else {
+                                    the_post_thumbnail();
+                                }
+
                 if ( have_posts() ) :
                     while ( have_posts() ) : the_post();?>
-                        <div class="item article-box">
-                            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(size:'article'); ?>
-                                <h2><?php the_title() ?></h2></a>
-                            <p><?php the_excerpt() ?></p>
-                            <div class="btn-more">
-                                <a href="<?php the_permalink(); ?>">ادامه مطلب</a>
+
+
+                        <div class="archive-podcasts-box">
+                            <div class="right-archive-pod">
+                                <i class="fas fa-podcast"></i>
+                            </div>
+                            <div class="left-archive-pod">
+                                <div class="archive-title-pod">
+                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(size:'article'); ?>
+                                        <h2><?php the_title() ?></h2></a>
+                                </div>
+                                <div class="archive-player-box">
+                                    <audio controls class="archive-player-pod">
+                                        <source src="<?php echo wp_audio_shortcode($attr);?>
+                    </audio>
+                                </div>
+                                <div class="archive-pod-more">
+                                    <a href="<?php the_permalink(); ?>">توضیحات بیشتر</a>
+
+                                </div>
+                                <div class="dlfile">
+                                        <a href="<?php echo $podc; ?>">دانلود</a>
+                                </div>
+
+
                             </div>
                         </div>
+
+
+
+
                     <?php
                     endwhile;
                 else :

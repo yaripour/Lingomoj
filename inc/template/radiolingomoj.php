@@ -45,12 +45,15 @@
 
                 <div class="details">
                         <div class="title-p">
-                            <h2><?php the_title(); ?></h2>
+                            <a href="<?php the_permalink(); ?>">
+                         <h2><?php the_title(); ?></h2> </a>
                         </div>
                     <div class="dl-p">
-                        <i class="fas fa-download"></i>
+                        <a href="<?php the_permalink(); ?>">
+                        <i class="fas fa-download"></i></a>
 
                     </div>
+
 
                 </div>
 

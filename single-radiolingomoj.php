@@ -38,8 +38,12 @@
 
 
 
-                                    );
-                                    echo wp_audio_shortcode($attr);
+                                    );?>
+                                <audio controls class="single-player">
+                                    <source src="<?php echo wp_audio_shortcode($attr);?>
+                    </audio>
+                                    <?php
+
                                 } else {
                                     the_post_thumbnail();
                                 }

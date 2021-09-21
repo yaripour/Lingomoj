@@ -93,11 +93,28 @@ add_filter('excerpt_lenght','custom_excerpt_lenght',999);
 // حذف محصولات مرتبط از بین محصولات
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
+
+// اضافه کردن تب فهرست جلسات دوره
+add_filter( 'woocommerce_product_tabs', 'woocommerce_product_course_list' );
+function woocommerce_product_course_list( $tabs ) {
+    $tabs['lesson_list'] = array(
+        'title' 	=> __( 'فهرست جلسات', 'woocommerce' ),
+        'priority' 	=> 10,
+        'callback' 	=> 'woocommerce_product_lesson_list_content'
+    );
+    return $tabs;
+}
+function woocommerce_product_lesson_list_content() {
+    echo "فهرست لیست جلسات";
+}
+
+
 require_once 'inc/mylingo-video-posttype.php';
 require_once 'inc/lingomoj-radio-posttype.php';
 require_once 'inc/radiolingomoj-metabox.php';
 require_once 'inc/mylingo-video-metabox.php';
 require_once 'inc/product-video-metabox.php';
+require_once 'inc/lesson.php';
 
 
 ?>

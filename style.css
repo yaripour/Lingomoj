@@ -1253,6 +1253,9 @@ footer .copy-right {
     margin-bottom: 20px;
     border-bottom: 1px solid #f1c40f;
     font-size: 20px;
+
+    text-align: center;
+}
 }
 .related-product h2 {
     text-align: center;
@@ -1373,4 +1376,87 @@ footer .copy-right {
 .tv .tv-head .podcast-link a:hover{
     background: #f1c40f;
     color: #ffffff;
+}
+
+/************podcast-archive**********/
+
+.main-single .archive-podcasts-box {
+    width: 100%;
+    border: 1px solid #f9e38ead;
+    margin-bottom: 22px;
+    padding: 15px 15px;
+    /* height: 123px; */
+    display: flex;
+    box-shadow: 5px 4px 5px 2px #f1c40f47;
+}
+
+.main-single .archive-podcasts-box .right-archive-pod {
+    float: right;
+    width: 15%;
+    display: inline-block;
+    padding-right: 0;
+}
+.main-single .archive-podcasts-box .right-archive-pod i {
+    float: right;
+    width: 85%;
+    font-size: 100px;
+    color: #f1c40f;
+    text-align: center;
+}
+
+.main-single .archive-podcasts-box .left-archive-pod {
+    float: left;
+    flex: 1;
+    padding: 10px 15px 10px 10px;
+}
+.main-single .archive-podcasts-box .left-archive-pod .archive-title-pod {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.main-single .archive-podcasts-box .left-archive-pod .archive-title-pod a {
+    text-decoration: none;
+    /* color: #f1c40f; */
+    color: #000;
+    font-size: 11px;
+}
+.main-single .archive-podcasts-box .left-archive-pod .archive-title-pod h2 {
+
+}
+.main-single .archive-podcasts-box .left-archive-pod .archive-player-box {
+
+}
+.main-single .archive-podcasts-box .left-archive-pod .archive-player-box .archive-player-pod{
+    width: 100%;
+}
+.main-single .archive-podcasts-box .left-archive-pod .archive-pod-more {
+
+}
+.main-single .archive-podcasts-box .left-archive-pod .archive-pod-more a {
+    border: 1px solid #ddd;
+    padding: 5px 35px;
+    color: #000;
+    background: #f1f3f4;
+    margin: 12px 8px 0px 9px;
+    border-radius: 7px;
+    /* margin-top: 11px; */
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+}
+.main-single .archive-podcasts-box .left-archive-pod .dlfile a {
+    border: 1px solid #ddd;
+    padding: 5px 35px;
+    color: #000;
+    background: #f1f3f4;
+    margin: 12px 8px 0px 9px;
+    border-radius: 7px;
+    /* margin-top: 11px; */
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+}
+.single-post .post-pic .single-player {
+
+    width: 100%;
 }
