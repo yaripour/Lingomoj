@@ -1197,7 +1197,7 @@ footer .copy-right {
     position: relative;
 }
 .main-pro {
-    width: 75%;
+    width: 73%;
 }
 .product-title {
     width: 100%;
@@ -1205,13 +1205,20 @@ footer .copy-right {
     margin-bottom: 20px;
 }
 .product-title header h1 {
-    background: #fdfdfd;
+    background: #fff;
     padding: 17px;
     color: #f1c40f;
     text-align: center;
 }
+
 .product-thumbnail {
     margin-bottom: 20px;
+    display: block;
+    /* width: 70%; */
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .single-product {
     float: right;
@@ -1222,10 +1229,10 @@ footer .copy-right {
     border: 1px solid #e5e5e5;
 }
 .single-product .content-single {
-    text-align: justify;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 35px;
     padding: 10px;
+    text-align: justify;
     overflow: hidden;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
@@ -1241,7 +1248,7 @@ footer .copy-right {
 }
 .related-product {
     float: right;
-    width: 75%;
+    width: 100%;
     background: #fff;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
@@ -1524,4 +1531,58 @@ footer .copy-right {
 }
 .lesson-course ul li ul li i {
     color: #828282;
+}
+.side-pro {
+    width: 25%;
+}
+.pro-price {
+    display: flex;
+    justify-content: space-around;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    height: 70px;
+}
+.pro-price span.price-name {
+    font-size: 18px;
+    padding-top: 15px;
+    color: #666;
+    font-weight: bold;
+}
+.pro-price p.price {
+    text-align: center;
+}
+.pro-price p.price > span {
+    font-size: 18px;
+    margin-top: 14px;
+    display: block;
+    font-weight: bold;
+}
+.pro-price p.price > del {
+    display: block;
+    color: #e74c3c;
+}
+.pro-price p.price > ins {
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.price-button {
+    background: #FEDF3E;
+    text-align: center;
+    margin-top: 15px;
+    box-shadow: 0px 0px 3px #FBBC09;
+}
+
+.price-button a {
+    color: #5F5F5F;
+    padding: 10px;
+    display: block;
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+}
+.price-button a i {
+    position: absolute;
+    right: 10px;
+    top: 15px;
 }
