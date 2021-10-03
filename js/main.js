@@ -83,3 +83,9 @@ $(document).ready(function (){
         $(this).find('ul').slideToggle();
     })
 });
+
+$(document).ready(function (){
+    $('#access_title').click(function (){
+        $('.list-access-dl').slideToggle();
+    })
+});

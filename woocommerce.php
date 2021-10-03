@@ -52,6 +52,7 @@
                     $id = $product->id;
                     if (is_user_logged_in()) {
                         $current_user = wp_get_current_user();
+                        $downloads = wc_get_customer_available_downloads($current_user->ID);
                     }
                     if (wc_customer_bought_product(  $current_user->user_email ,  $current_user->ID , $id )){
                         ?>
@@ -75,7 +76,29 @@
                     }
                     ?>
 
+                    <div class="product-rate">
+                        <div class="show-rate">
+                            <?php woocommerce_template_loop_rating(); ?>
+                        </div>
+                        <div class="woocommerce show-rate">
+                            <?php woocommerce_template_loop_rating(); ?>
+                        </div>
+                    </div>
+
                 </div>
+                <?php if (wc_customer_bought_product(  $current_user->user_email ,  $current_user->ID , $id )) { ?>
+                    <div class="single-widget">
+                        <div class="access-title" id="access_title">
+                            <h4>دانلود فایل های دوره</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="list-access-dl">
+                            <?php foreach ( $downloads as $download ) :
+                                echo '<a href="' . esc_url( $download['download_url'] ) . '" class="woocommerce-MyAccount-downloads-file button alt"> <i class="fas fa-download"></i> ' . esc_html( $download['download_name'] ) . '</a>';
+                            endforeach; ?>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>

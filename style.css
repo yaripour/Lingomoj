@@ -48,7 +48,7 @@ a {
 .top-menu {
     width: 100%;
     float: right;
-    background: #f1c40f;
+    background: #FBBC09;
 }
 .container {
     max-width: 1200px;
@@ -539,7 +539,7 @@ max-width: 100%;
 .adv {
     float: right;
     width: 100%;
-    background: linear-gradient(to left,#373B44,#4286f4);
+    background: linear-gradient(to left,#FBBC09,#efd75b);
     padding: 25px 20px;
     margin-top: 20px;
 
@@ -555,7 +555,7 @@ max-width: 100%;
 }
 .adv .right-adv p{
     padding-top: 25px;
-    color: #D6D6D6;
+    color: #FFFFFF;
     line-height: 40px;
 }
 .adv .right-adv a {
@@ -772,8 +772,8 @@ footer .quick-access {
 footer .copy-right {
     float: right;
     width: 100%;
-    background: #f1c40f;
-    color: #e8e8e8;
+    background: #FBBC09 !important;
+    color: #fff;
 
 }
 .copy-right p {
@@ -788,13 +788,13 @@ footer .copy-right {
 
 }
 .social-media a i {
-    color: #b4ec8c;
+    color: #FFFFFF;
     padding: 5px;
     font-size: 18px;
 
 }
 .social-media a i:hover {
-    color: #ffffff;
+    color: #63AFBF;
 
 
 }
@@ -1207,7 +1207,7 @@ footer .copy-right {
 .product-title header h1 {
     background: #fff;
     padding: 17px;
-    color: #f1c40f;
+    color: #63AFBF;
     text-align: center;
 }
 
@@ -1511,6 +1511,9 @@ footer .copy-right {
 .lesson-course ul li ul .meta-course .dl-course {
     float: left;
 }
+.lesson-course ul li ul .meta-course .denied a{
+    background: #95a5a6 !important;
+}
 .lesson-course ul li ul .meta-course .dl-course a {
     color: #fff;
     text-decoration: none;
@@ -1538,7 +1541,7 @@ footer .copy-right {
 .pro-price {
     display: flex;
     justify-content: space-around;
-    background: #f7f8f9;
+    background: #E0E0E0;
     padding: 5px 15px;
     height: 70px;
 }
@@ -1585,4 +1588,39 @@ footer .copy-right {
     position: absolute;
     right: 10px;
     top: 15px;
+}
+.product-rate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.woocommerce .star-rating {
+    color: #f9a134 !important;
+    font-size: 18px !important;
+    margin-top: 5px !important;
+}
+.access-title {
+    position: relative;
+    cursor: pointer;
+}
+.access-title i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+.list-access-dl {
+    display: none;
+}
+.list-access-dl a {
+    display: block;
+    background: #95a5a6;
+    color: #fff;
+    margin: 10px 0px;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px #b3c9ca;
+}
+.list-access-dl a i{
+    font-size: 12px;
 }

@@ -23,7 +23,7 @@ if (!empty($course)) {
                             <div class="dl-course">
                                 <a href="<?php echo $item['lingomoj_course_chapter_link']; ?>" target="_blank">
                                     <i class="fas fa-download"></i>
-                                    لینک دانلود فصل
+                                    لینک دانلود کل فصل
                                 </a>
                             </div>
                         </div>
