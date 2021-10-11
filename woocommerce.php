@@ -3,7 +3,7 @@
     <div class="single-page">
         <div class="container">
             <div class="main-single main-pro">
-
+                <?php wc_print_notices(); ?>
                 <div class="product-title">
                     <header>
                         <h1><?php the_title(); ?></h1>
@@ -99,6 +99,33 @@
                         </div>
                     </div>
                 <?php } ?>
+
+                <div class="single-widget">
+                    <div class="total-buyers">
+                        <i class="fas fa-user-graduate"></i> تعداد دانشجو :
+                        <span><?php echo get_post_meta($id , 'total_sales' , true); ?></span>
+                    </div>
+                    <?php do_action("woocommerce_product_additional_information" , $product); ?>
+                </div>
+
+                <div class="single-widget">
+                    <div class="std-box-view">
+                        <span class="product-view"> <i class="fas fa-eye"></i> <?php if(function_exists('the_views')) { the_views(); } ?> </span>
+                        <span class="product-review-count"> <i class="fas fa-comments"></i> <?php echo get_comments_number($id); ?> دیدگاه </span>
+                    </div>
+                </div>
+
+                <div class="single-widget">
+                    <div class="catname-pro">
+                        <i class="fas fa-list"></i>
+                        <?php echo wc_get_product_category_list($id, ', ', '<span class="posted_in">' . _n('Category:', 'Categories:', count($product->get_category_ids()), 'woocommerce') . ' ', '</span>'); ?>
+                    </div>
+                    <div class="shortlink-pro">
+                        لینک کوتاه :
+                        <input type="text" value="<?php echo get_home_url()."/?p=".$id; ?>">
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

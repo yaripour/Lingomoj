@@ -35,25 +35,28 @@
                     <div class="description">
 
                         <div class="teacher">
-                            <span>یاری پور</span>
+                            <span>
+                                 <?php
+                                 $teacher_name = get_post_meta(get_the_ID() , 'lingomoj_course_teacher_name' , true);
+                                 if (!empty($teacher_name)) {
+                                     echo $teacher_name;
+                                 }
+                                 ?>
+                            </span>
                             <i class="fas fa-chalkboard-teacher"></i>
                         </div>
-                        <div class="rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-
+                        <div class="woocommerce rate">
+                            <?php woocommerce_template_loop_rating(); ?>
                         </div>
+
                     </div>
                     <div class="details">
                         <div class="price">
-                            <del>1,000,000</del>
-                            <span>رایگان</span>
+                            <?php global $product; echo $product->get_price_html(); ?>
                         </div>
                         <div class="users">
-                            <i class="fas fa-users"></i>18
+                            <i class="fas fa-users"></i>
+                            <?php echo get_post_meta($product->id , 'total_sales' , true); ?>
                         </div>
                     </div>
                 </div>

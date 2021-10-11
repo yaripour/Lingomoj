@@ -102,18 +102,27 @@ function woocommerce_product_course_list( $tabs ) {
         'priority' 	=> 10,
         'callback' 	=> 'woocommerce_product_lesson_list_content'
     );
+    unset($tabs['additional_information']);
     return $tabs;
 }
 function woocommerce_product_lesson_list_content() {
     include_once "admin/content-tab-lesson.php";
 }
 
-
+/*******رایگان بجای صفر تومان********/
+add_filter( 'woocommerce_get_price_html', 'novinadmin_price_zero', 100, 2 );
+function novinadmin_price_zero( $price, $product ){
+    if ( '0' === $product->get_price()  ) {
+        $price = 'رایگان';
+    }
+    return $price;
+}
 require_once 'inc/mylingo-video-posttype.php';
 require_once 'inc/lingomoj-radio-posttype.php';
 require_once 'inc/radiolingomoj-metabox.php';
 require_once 'inc/mylingo-video-metabox.php';
 require_once 'inc/product-video-metabox.php';
+require_once 'inc/teacher-product.php';
 require_once 'inc/lesson.php';
 
 

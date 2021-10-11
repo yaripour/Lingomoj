@@ -640,9 +640,11 @@ max-width: 100%;
 .course-box a {
     text-decoration: none;
 }
+/****
 .course-box span {
     font-size: 13px;
 }
+***/
 .course-box h2 {
     font-size: 15px;
     color: #584949;
@@ -1220,6 +1222,10 @@ footer .copy-right {
     margin-right: auto;
     width: 50%;
 }
+.product-thumbnail figure img{
+    margin: auto;
+    display: block;
+}
 .single-product {
     float: right;
     background: #ffffff;
@@ -1623,4 +1629,157 @@ footer .copy-right {
 }
 .list-access-dl a i{
     font-size: 12px;
+}
+.total-buyers {
+    padding: 20px;
+    border: 2px dashed #ddd;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 15px;
+}
+.total-buyers i {
+    font-size: 25px;
+    padding-left: 6px;
+}
+.total-buyers span {
+    background: #ecf0f1;
+    padding: 3px 10px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.feature-product {
+    padding: 10px;
+    color: #777;
+    border-bottom: 1px solid #efefef;
+}
+.feature-product:last-child {
+    border-bottom: none;
+}
+.feature-product i {
+    margin-left: 5px;
+}
+.feature-product span{
+
+}
+.feature-product span p{
+    display: inline;
+}
+.std-box-view {
+    font-size: 16px;
+    text-align: center;
+    color: #777;
+}
+.std-box-view .product-view {
+    padding-left: 15px;
+    margin-left: 15px;
+    border-left: 1px solid #ddd;
+}
+.std-box-view i{
+    font-size: 20px;
+}
+.catname-pro {
+    color: #777;
+}
+.catname-pro a{
+    color: #777;
+}
+.shortlink-pro {
+    padding-top: 5px;
+    margin-top: 7px;
+}
+.shortlink-pro input[type="text"] {
+    color: #a7a7a7;
+    padding: 7px 10px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 0 7px #e9efe9 inset;
+    width: 100%;
+    text-align: center;
+}
+
+.woocommerce input[type="number"] {
+    border: 1px solid #c9c3c3;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.woocommerce .coupon input[type="text"]{
+    width: 140px !important;
+    font-size: 15px;
+}
+
+.woocommerce textarea {
+    height: 184px;
+    line-height: 26px;
+    width: 100%;
+    outline: 0;
+    padding: 11px 10px;
+    border: 1px solid #dcdcdc;
+    -webkit-box-shadow: 0 0 7px #e9efe9 inset;
+    box-shadow: 0 0 7px #e9efe9 inset;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    font-family: 'iransans';
+
+}
+.woocommerce input[type='text'],.woocommerce input[type='password'],.woocommerce input[type='tel'],.woocommerce input[type='email'] {
+    width: 100%;
+    outline: 0;
+    padding: 11px 10px;
+    border: 1px solid #dcdcdc;
+    -webkit-box-shadow: 0 0 7px #e9efe9 inset;
+    box-shadow: 0 0 7px #e9efe9 inset;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    font-family: 'iransans';
+}
+.woocommerce a.button.alt {
+    background: #63AFBF !important;
+    color: #FFFFFF !important;
+}
+.woocommerce button {
+    font-family: 'iransans' !important;
+    background: #63AFBF !important;
+    color: #FFFFFF !important;
+}
+
+.woocommerce a {
+    text-decoration: none !important;
+    color: #63AFBF;
+}
+.lingomoj-nav-acount {
+    float: right;
+    width: 20%;
+    background: #FBBC09;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.lingomoj-nav-acount ul li {
+    list-style: none;
+}
+.lingomoj-nav-acount ul li a {
+    color: #fff !important;
+    padding: 10px !important;
+    display: block;
+    border-bottom: 1px solid #FEDF3E;
+}
+.lingomoj-nav-acount ul li a:hover {
+    background: #FEDF3E;
+}
+.lingomoj-nav-acount ul li:last-child a {
+    border-bottom: none;
+
+}
+.lingomoj-content-acount {
+    float: right;
+    width: 75%;
+    padding: 20px;
 }
