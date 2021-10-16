@@ -25,7 +25,7 @@ include_once 'inc/template/radiolingomoj.php'
 
             </div>
             <div class="articles-link">
-                <a href="#">همه مقالات</a>
+                <a href="<?php echo get_post_type_archive_link('tv'); ?>">همه مقالات</a>
             </div>
         </div>
         <div class="articles-slider">

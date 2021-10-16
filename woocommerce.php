@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+if (is_singular('product')) {
+
+    ?>
+    <?php get_header(); ?>
 
     <div class="single-page">
         <div class="container">
@@ -131,3 +135,10 @@
     </div>
 
 <?php get_footer(); ?>
+    <?php
+}
+else {
+    woocommerce_get_template('archive-product.php');
+}
+?>
+

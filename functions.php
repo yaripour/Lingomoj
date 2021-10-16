@@ -1,15 +1,23 @@
 <?php
 function add_theme_scripts() {
+    // اضافه کردن فایل های css
     wp_enqueue_style( 'all', get_template_directory_uri() . '/css/all.min.css', array(), false, 'all');
     wp_enqueue_style( 'owl.carousel', get_template_directory_uri() . '/css/owl.carousel.min.css', array(), false, 'all');
     wp_enqueue_style( 'owl.theme', get_template_directory_uri() . '/css/owl.theme.default.min.css', array(), false, 'all');
     wp_enqueue_style( 'style', get_stylesheet_uri(), array(), false, 'all' );
+    //اضافه کردن فایل جاوااسکریپت
     wp_enqueue_script( 'jq', get_template_directory_uri() . '/js/jquery-3.6.0.min.js', array(), false, true);
     wp_enqueue_script( 'owl.carousel.js', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), false, true);
     wp_enqueue_script( 'main.js', get_template_directory_uri() . '/js/main.js', array('jquery'), false, true);
 
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+
+function add_admin_scripts(){
+    wp_enqueue_script('conditional' , get_template_directory_uri() . '/js/cmb2-conditional-logic.min.js' , array('jquery') , false , true);
+}
+
+add_action( 'admin_enqueue_scripts', 'add_admin_scripts' );
 
 
 function lingomoj_setup_theme () {
@@ -33,6 +41,9 @@ function lingomoj_setup_theme () {
 
 }
 
+
+add_action( 'admin_enqueue_scripts', 'add_admin_scripts' );
+
 add_action('after_setup_theme','lingomoj_setup_theme');
 
 function mylingo_widget() {
@@ -45,6 +56,18 @@ function mylingo_widget() {
         'before_title'  => '<h4>',
         'after_title'   => '</h4>',
     ) );
+
+
+    register_sidebar( array(
+        'name'          => __( 'ناحیه کناری فروشگاه' ),
+        'id'            => 'lingomoj_product',
+        //  'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'textdomain' ),
+        'before_widget' => '<div class="single-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ) );
+
 
     register_sidebar( array(
         'name'          => __( 'فوتر- ستون اول' ),
@@ -124,7 +147,6 @@ require_once 'inc/mylingo-video-metabox.php';
 require_once 'inc/product-video-metabox.php';
 require_once 'inc/teacher-product.php';
 require_once 'inc/lesson.php';
-
+require_once 'theme-options/settings.php';
 
 ?>
-

@@ -41,6 +41,10 @@ body {
 }
 a {
     transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+.nopadding {
+    padding: 0 !important;
 }
 .clear {
     clear: both;
@@ -74,10 +78,13 @@ a {
     line-height: 40px;
     font-size: 13px;
 }
-
+.topbar-right ul li a {
+    color: #ffffff;
+}
 .topbar-right ul li i {
     margin-left: 7px;
     font-size: 17px;
+    color: #ffffff;
 }
 .topbar-left ul li {
     float: left;
@@ -87,6 +94,7 @@ a {
 .topbar-left ul li i {
     font-size: 18px;
     padding: 10px 15px;
+    color: #ffffff;
 }
 /*********شروع استای های هدر*********/
 .header {
@@ -149,7 +157,7 @@ a {
     font-weight: normal;
 }
 .main-menu ul li ul li a:hover {
-    background: #f1c40f;
+    background: #FEDF3E;
     color: #fff;
 }
 .main-menu > ul > li:hover ul {
@@ -158,13 +166,77 @@ a {
     top :80px;
 
 }
+/********شروع منوی دوم*********/
+.menu-wrapper {
+    float: right;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 3px 3px #f8f8f8;
+}
+.main-menu2 {
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu2 > ul > li {
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+
+}
+.main-menu2 ul li a {
+    text-decoration: none;
+    padding: 20px 18px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #454647;
+}
+.main-menu2 ul li a i {
+    padding-right: 7px;
+
+}
+.main-menu2 ul li ul {
+    float: right;
+    position: absolute;
+    display: block;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px #e6e6e6;
+    top: 100px;
+    right: 0;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+    z-index: 999;
+}
+.main-menu2 ul li ul li {
+    list-style: none;
+}
+.main-menu2 ul li ul li a {
+    padding:9px 15px;
+    display: block;
+    font-weight: normal;
+}
+.main-menu2 ul li ul li a:hover {
+    background: #FEDF3E;
+    color: #fff;
+}
+.main-menu2 > ul > li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top :80px;
+
+}
+/***********پایان منوی دوم***********/
 .sign {
     float: left;
     padding: 15px 25px;
+    margin-top: 10px;
 }
 .sign a {
     text-decoration: none;
-    background: #27567d;
+    background: #63AFBF;
     color: #fff;
     padding: 9px 11px;
     display: inline-block;
@@ -176,7 +248,7 @@ margin-left: 7px;
     font-size: 17px;
 }
 .sign a:hover {
-    background: #f1c40f;
+font-weight: bold;
 }
 .box-slider {
     float: right;
@@ -191,7 +263,7 @@ margin-left: 7px;
     z-index: 800;
     font-size: 60px;
     padding: 15px !important;
-    background: #ecf0f1;
+    background: #E0E0E0;
 }
 .box-slider .owl-carousel .owl-nav button.owl-next {
     right: 0;
@@ -206,7 +278,7 @@ margin-left: 7px;
     margin: 35px auto;
     padding-top: 45px;
     display: flex;
-    border-bottom: 1px solid #D6D6D6;
+    border-bottom: 1px solid #E0E0E0;
 }
 /**************Start Tv section*************/
 .tv {
@@ -240,16 +312,18 @@ margin-left: 7px;
 
 }
 .tv .tv-head .tv-link a{
-    border: #f1c40f solid 2px;
+    border:#FBBC09 solid 2px;
     border-radius: 5px;
     text-decoration: none;
-    color: #f1c40f;
+    color: #FBBC09;
     padding: 5px 10px;
     margin-left: 50px;
+    background: #FFFFFF;
 }
 .tv .tv-head .tv-link a:hover{
-    background: #f1c40f;
-    color: #ffffff;
+    background: #FBBC09 !important;
+    color: #FFFFFF !important;
+    border: #FBBC09 solid 2px;
 }
 .video-box {
     float: right;
@@ -273,7 +347,7 @@ max-width: 100%;
     left :0;
     top: 0;
     padding: 9px; 12px;
-    background: #c4c3c3;
+    background: #E0E0E0;
     color: #fcfcfc;
     border-radius: 5px;
 }
@@ -325,7 +399,7 @@ max-width: 100%;
     margin: 0 18px 16px 0;
 }
 .left-videobox .other-videos:hover figure >i {
-    color: #f1c40f;
+    color: #FEDF3Es;
 }
 
 .left-videobox .other-videos a {
@@ -357,7 +431,7 @@ max-width: 100%;
     left :0;
     top: 0;
     padding: 6px; 7px;
-    background: #c4c3c3;
+    background: #E0E0E0;
     color: #fcfcfc;
     border-radius: 5px;
 }
@@ -378,17 +452,18 @@ max-width: 100%;
 }
 .all-videos a {
     text-align: center;
-    background: #f1c40f;
+    background: #FBBC09;
     border-radius: 5px;
     text-decoration: none;
     padding: 5px;
-    font-weight: bold;
     display: block;
-    color: #fff;
+    color: #fff !important;
+    border: 2px solid #FBBC09;
 
 }
 .all-videos a:hover {
-    background: #7f8c8d;
+    background: #ffffff !important;
+    color: #FBBC09;
 }
 /***************Start Articles section****************/
 .articles .articles-head {
@@ -417,16 +492,16 @@ max-width: 100%;
 
 }
 .articles .articles-head .articles-link a{
-    border: #f1c40f solid 2px;
+    border: #FBBC09 solid 2px;
     border-radius: 5px;
     text-decoration: none;
-    color: #f1c40f;
+    color: #FBBC09;
     padding: 5px 10px;
     margin-left: 50px;
 }
 .articles .articles-head .articles-link a:hover{
-    background: #f1c40f;
-    color: #ffffff;
+    background: #FBBC09;
+    color: #FFFFFF !important;
 }
 .articles-slider {
     float: right;
@@ -466,7 +541,7 @@ max-width: 100%;
 }
 
 .article-box h2:hover {
-    color: #f1c40f;
+    color: #FBBC09;
 }
 
 .article-box p {
@@ -488,13 +563,13 @@ max-width: 100%;
 }
 .article-box .btn-more a{
     display: block;
-    background: #e9e9e7;
+    background: #E0E0E0;
     padding: 10px;
     text-align: center;
     color: black;
 }
 .article-box:hover .btn-more a {
-    background: #f1c40f;
+    background: #FBBC09;
     color: #ffffff;
 }
 .articles-slider .owl-carousel .owl-nav button.owl-next, .articles-slider .owl-carousel .owl-nav button.owl-prev {
@@ -531,7 +606,7 @@ max-width: 100%;
     left: -18px;
 }
 .articles-slider .owl-theme .owl-dots .owl-dot.active span {
-    background: #f1c40f !important;
+    background: #FBBC09 !important;
     width: 20px;
     transition: all .4s ease-in-out;
 }
@@ -539,7 +614,7 @@ max-width: 100%;
 .adv {
     float: right;
     width: 100%;
-    background: linear-gradient(to left,#FBBC09,#efd75b);
+    background: linear-gradient(to left,#FBBC09,#efd75b) !important;
     padding: 25px 20px;
     margin-top: 20px;
 
@@ -565,7 +640,7 @@ max-width: 100%;
     padding: 10px;
     margin-top: 40px;
     display: inline-block;
-    color: #3e6bb3;
+    color: #63AFBF;
     border-radius: 5px;
 
 }
@@ -609,16 +684,16 @@ max-width: 100%;
 
 }
 .course .course-head .course-link a{
-    border: #f1c40f solid 2px;
+    border: #FBBC09 solid 2px;
     border-radius: 5px;
     text-decoration: none;
-    color: #f1c40f;
+    color: #FBBC09 !important;
     padding: 5px 10px;
     margin-left: 50px;
 }
 .course .course-head .course-link a:hover{
-    background: #f1c40f;
-    color: #ffffff;
+    background: #FBBC09 !important;
+    color: #ffffff !important;
 }
 .course-slider {
     float: right;
@@ -653,7 +728,7 @@ max-width: 100%;
     display: inline-block;
 }
 .course-box h2:hover {
-    color: #f1c40f;
+    color: #FBBC09;
 }
 .course-box .description {
     display: flex;
@@ -665,7 +740,7 @@ max-width: 100%;
 
 }
 .course-box .description .rate i{
-    color: #f9a134;
+    color: #FBBC09;
     font-size: 13px;
 }
 .course-box .description .teacher{
@@ -698,7 +773,7 @@ max-width: 100%;
 
 }
 .course-box .details .price ins {
-    color: #f1c40f;
+    color: #FBBC09;
     margin-left: 4px;
     text-decoration: none;
     padding: 2px 12px 0;
@@ -750,7 +825,7 @@ footer .quick-access {
     line-height: 35px;
 }
 #qa li {
-    color: #f1c40f;
+    color: #63AFBF;
     list-style-type: circle;
 
 }
@@ -764,7 +839,7 @@ footer .quick-access {
 }
 .quick-access i {
     font-size: 16px;
-    color: #f1c40f;
+    color: #63AFBF;
     margin-left: 10px;
 
 }
@@ -843,7 +918,7 @@ footer .copy-right {
 }
 
 .single-post .postmeta i {
-    color: #f1c40f;
+    color: #63AFBF;
     margin-left:4px ;
 
 
@@ -919,7 +994,7 @@ footer .copy-right {
 }
 .single-widget h4 {
     font-size: 18px;
-    border-bottom: 1px solid #f1c40f;
+    border-bottom: 1px solid #63AFBF;
     padding-bottom: 10px;
     margin-bottom: 10px;
 
@@ -935,7 +1010,7 @@ footer .copy-right {
 }
 .single-widget ul li a:hover {
     padding-right: 10px;
-    color: #f1c40f;
+    color: #FBBC09;
 }
 .single-widget input[type="text"],.single-widget input[type="email"],.single-widget input[type="password"],.single-widget input[type="tell"] {
     width: 100%;
@@ -953,7 +1028,7 @@ footer .copy-right {
 
 }
 .single-widget input[type="submit"] {
-    background-color: #f1c40f;
+    background-color: #FBBC09;
     border-radius: 5px;
     padding: 5px 17px;
     margin-top: 10px;
@@ -1007,7 +1082,7 @@ footer .copy-right {
     border-radius: 4px;
 }
 .pagination span.current {
-    background: #f1c40f;
+    background: #FBBC09;
     color: #fff;
     text-decoration: none;
     padding: 5px 14px;
@@ -1079,7 +1154,7 @@ footer .copy-right {
     margin-top: 20px;
 }
 .comment-respond input[type="submit"] {
-    background-color: #f1c40f;
+    background-color: #FBBC09;
     border-radius: 5px;
     padding: 10px 17px;
     line-height: 27px;
@@ -1144,12 +1219,12 @@ footer .copy-right {
     width: 100%;
 }
 #wp-calendar caption {
-    background: #f1c40f;
+    background: #FBBC09;
     color: #FFFFFF;
 }
 #wp-calendar tbody tr td a {
     font-weight: bold;
-    border: 2px solid #f1c40f !important;
+    border: 2px solid #FBBC09 !important;
     border-radius: 4px;
     padding: 3px 3px;
     text-decoration: none;
@@ -1157,7 +1232,7 @@ footer .copy-right {
 }
 
 .selected a {
-    border-bottom:3px solid #f1c40f !important;
+    border-bottom:3px solid #FBBC09 !important;
 
 }
 .sidebar a {
@@ -1168,6 +1243,7 @@ footer .copy-right {
     margin-top: 10px !important;
     white-space: normal !important;
 }
+/*******شروع کادر جستجو********/
 .searchbox {
     position: absolute;
     width: 100%;
@@ -1198,6 +1274,40 @@ footer .copy-right {
 .relative {
     position: relative;
 }
+/******پایان کادر جستجو هدر اول*********/
+/****شروع کادر جستجو هدر دوم*****/
+.searchbox2 {
+    float: right;
+    width: 60%;
+    margin-right: 25px;
+    margin-top: 20px;
+    position: relative;
+}
+.searchbox2 input[type="text"] {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'iransans';
+    padding: 8px 15px;
+    background: #f8f8f8;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+}
+.searchbox2 button {
+    position: absolute;
+    left: 13px;
+    top: 9px;
+    font-size: 22px;
+    color: #c8c7c7;
+    cursor: pointer;
+    background: #f8f8f8;
+}
+.search-icon {
+    cursor: pointer;
+}
+.relative {
+    position: relative;
+}
+/*******پایان کادر جستجو هدر دوم*******/
 .main-pro {
     width: 73%;
 }
@@ -1209,7 +1319,7 @@ footer .copy-right {
 .product-title header h1 {
     background: #fff;
     padding: 17px;
-    color: #63AFBF;
+
     text-align: center;
 }
 
@@ -1242,7 +1352,7 @@ footer .copy-right {
     overflow: hidden;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
-    border: 2px solid #f1c40f !important;
+    border: 2px solid #FBBC09 !important;
     border-bottom: none !important;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
@@ -1250,7 +1360,7 @@ footer .copy-right {
     border: 0 !important;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs::before {
-    border-bottom: 2px solid #f1c40f !important;
+    border-bottom: 2px solid #FBBC09 !important;
 }
 .related-product {
     float: right;
@@ -1264,7 +1374,7 @@ footer .copy-right {
 .related-product h4 {
     padding: 10px 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #f1c40f;
+    border-bottom: 1px solid #FBBC09;
     font-size: 20px;
 
     text-align: center;
@@ -1315,7 +1425,8 @@ footer .copy-right {
     /* align-content: center; */
     text-align: center;
     padding: 20px;
-    color: #f1c40f;
+    color: #63AFBF !important;
+
 
 }
 .latest-podcast-box .left-podcasts figure {
@@ -1357,8 +1468,8 @@ footer .copy-right {
     overflow: hidden;
     padding: 7px 18px;
     border-radius: 8px;
-    border: 1px solid #f1c40f;
-    color: #f1c40f;
+    border: 1px solid #63AFBF;
+    color: #63AFBF;
     font-size: large;
 
 }
@@ -1379,16 +1490,16 @@ footer .copy-right {
 
 }
 .tv .tv-head .podcast-link a{
-    border: #f1c40f solid 2px;
+    border: #FBBC09 solid 2px;
     border-radius: 5px;
     text-decoration: none;
-    color: #f1c40f;
+    color: #FBBC09;
     padding: 5px 64px;
     margin-left: 50px;
 }
 .tv .tv-head .podcast-link a:hover{
-    background: #f1c40f;
-    color: #ffffff;
+    background: #FBBC09;
+    color: #ffffff !important;
 }
 
 /************podcast-archive**********/
@@ -1568,7 +1679,7 @@ footer .copy-right {
 }
 .pro-price p.price > del {
     display: block;
-    color: #e74c3c;
+    color: #FBBC09;
 }
 .pro-price p.price > ins {
     font-size: 17px;
@@ -1601,7 +1712,7 @@ footer .copy-right {
     margin-top: 15px;
 }
 .woocommerce .star-rating {
-    color: #f9a134 !important;
+    color: #FBBC09 !important;
     font-size: 18px !important;
     margin-top: 5px !important;
 }
@@ -1769,10 +1880,10 @@ footer .copy-right {
     color: #fff !important;
     padding: 10px !important;
     display: block;
-    border-bottom: 1px solid #FEDF3E;
+    border-bottom: 1px solid #FBBC09;
 }
 .lingomoj-nav-acount ul li a:hover {
-    background: #FEDF3E;
+    background: #FBBC09;
 }
 .lingomoj-nav-acount ul li:last-child a {
     border-bottom: none;
@@ -1783,3 +1894,94 @@ footer .copy-right {
     width: 75%;
     padding: 20px;
 }
+.parrent-product {
+    display: flex;
+    flex-wrap: wrap;
+}
+.shop-archive-box {
+    width: 32%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    direction: ltr;
+}
+.woocommerce form.woocommerce-ordering select {
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-family: 'iransans';
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.side-shop ul li a img,.side-shop ul li span.quantity {
+    display: none;
+}
+
+/***********فیلتر بر اساس قیمت**********/
+.price_slider{
+    margin-bottom: 1em;
+}
+.price_slider_amount {
+    text-align: right;
+    line-height: 2.4em;
+    font-size: 0.8751em;
+}
+.price_slider_amount .button {
+    font-size:1.15em;
+}
+.price_slider_amount .button {
+    background: #63AFBF;
+    border: 0;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'iransans';
+    margin: 10px 0;
+    display: block;
+}
+.price_slider_amount .price_label {
+    font-size:14px;
+}
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background: #63AFBF;
+    border-radius: 50%;
+    top: -2px;
+}
+.ui-slider .ui-slider-handle:last-child {
+    margin-left: -1em;
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    border-radius: 1em;
+    background: #dee7ea;
+}
+.price_slider_wrapper .ui-widget-content {
+    border-radius: 1em;
+}
+.ui-slider-horizontal {
+    height:.7em;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: -1px;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: -1px;
+}
+
+/*********پایان فیلتر بر اساس قیمت******/
