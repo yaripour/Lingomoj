@@ -207,8 +207,81 @@ function lingomoj_register_theme_options_metabox() {
             'placeholder' => 'پبشفرض لینک حساب کاربری است ',
         ),
     ) );
+    // تنظیمات بلاگ
+    $blog = $alloptions->add_field( array(
+        'id'          => 'lingomoj_blog_options',
+        'type'        => 'group',
+        'repeatable'  => false, // use false if you want non-repeatable group
+        'options'     => array(
+            'group_title'       => __( 'تنظیمات وبلاگ ', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+            'sortable'          => false,
+            'closed'         => true, // true to have the groups closed by default
+            // 'remove_confirm' => esc_html__( 'Are you sure you want to remove?', 'cmb2' ), // Performs confirmation before removing group.
+        ),
+    ) );
+    $alloptions->add_group_field( $blog, array(
+        'name' => 'موقعیت سایدبار',
+        'id'   => 'lingomoj_blog_sidebar_option',
+        'type' => 'image_select',
+        'default' => 'side-left',
+        'options' => array(
+            'side-left' => array('title' => 'سایدبار چپ', 'img' =>  get_template_directory_uri().'/img/left-side.png'),
+            'side-right' => array('title' => 'سایدبار راست', 'img' =>  get_template_directory_uri().'/img/right-side.png'),
+            'full-width' => array('title' => 'بدون سایدبار', 'img' =>  get_template_directory_uri().'/img/full-width.png'),
+        ),
+
+    ) );
+
+
+    //شروع تنظیمات بخش فوتر
+    $footer = $alloptions->add_field( array(
+        'id'          => 'lingomoj_footer_options',
+        'type'        => 'group',
+        'repeatable'  => false, // use false if you want non-repeatable group
+        'options'     => array(
+            'group_title'       => __( 'تنظیمات فوتر ', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+            'sortable'          => false,
+            'closed'         => true, // true to have the groups closed by default
+            // 'remove_confirm' => esc_html__( 'Are you sure you want to remove?', 'cmb2' ), // Performs confirmation before removing group.
+        ),
+    ) );
+    $alloptions->add_group_field( $footer, array(
+        'name' => 'رنگ زمینه فوتر',
+        'id'   => 'lingomoj_footer_background_option',
+        'type'    => 'colorpicker',
+        'default' => '#f1f2f673',
+        'attributes' => array(
+            'data-colorpicker' => json_encode( array(
+                'palettes' => array( '#f1f2f673', '#303030'),
+            ) ),
+        ),
+    ) );
+    $alloptions->add_group_field( $footer, array(
+        'name' => 'رنگ متن فوتر',
+        'id'   => 'lingomoj_footer_text_color_option',
+        'type'    => 'colorpicker',
+        'default' => '#4a4a4a',
+        'attributes' => array(
+            'data-colorpicker' => json_encode( array(
+                'palettes' => array( '#4a4a4a', '#303030'),
+            ) ),
+        ),
+    ) );
+
+    $alloptions->add_group_field( $footer, array(
+        'name' => 'متن کپی رایت',
+        'id'   => 'lingomoj_footer_copyright_option',
+        'description'   => 'متن کپی رایت را وارد کنید',
+        'type' => 'textarea',
+        'attributes' => array(
+            'placeholder' => 'تمامی حقوق سایت برای مای لینگوتیم محفوظ است و کپی برداری تنها با ذکر منبع آزاد است',
+        ),
+    ) );
 
 }
+
+
+
 
 
 

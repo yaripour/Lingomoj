@@ -5,11 +5,42 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <?php wp_head(); ?>
-    <?php $general = lingomoj_get_option('lingomoj_general_options'); ?>
+    <?php
+    $general = lingomoj_get_option('lingomoj_general_options');
+    $topmenu = lingomoj_get_option('lingomoj_topmenu_options');
+    $header = lingomoj_get_option('lingomoj_header_options');
+    $footer = lingomoj_get_option('lingomoj_footer_options');
+    ?>
+
     <link rel="icon" type="image/png/jpg" href=<?php echo $general[0]['lingomoj_favicon_option']; ?>>
 
     <style>
         <?php
+        
+        
+        // شروع تنظیمات فوتر
+        $footer_bg = $footer[0]['lingomoj_footer_background_option'];
+        ?>
+        footer{background: <?php echo $footer_bg." !important"; ?>}
+        <?php
+
+        $footer_color = $footer[0]['lingomoj_footer_text_color_option'];
+        ?>
+        footer{color: <?php echo $footer_color." !important"; ?>}
+        <?php
+
+        $copyright_bg = $footer[0]['lingomoj_footer_copyright_background_option'];
+        ?>
+        .copy-right{background: <?php echo $copyright_bg." !important"; ?>}
+        <?php
+
+        $copyright_color = $footer[0]['lingomoj_footer_copyright_color_option'];
+        ?>
+        .copy-right{color: <?php echo $copyright_color." !important"; ?>}
+        <?php
+
+
+        // شروع تنظیمات عمومی
          $container = $general[0]['lingomoj_width_container_option'];
          $maincolor = $general[0]['lingomoj_color_main_option'];
          $secondcolor = $general[0]['lingomoj_color_second_option'];
@@ -84,7 +115,7 @@
 </head>
 <body>
 <?php
-$topmenu = lingomoj_get_option('lingomoj_topmenu_options');
+
 $topmenu_active = $topmenu[0]['lingomoj_topmenu_active_option'];
 $topmenu_background = $topmenu[0]['lingomoj_color_topmenu_option'];
 $topmenu_tell = $topmenu[0]['lingomoj_tell_topmenu_option'];
@@ -120,7 +151,7 @@ if ($topmenu_active=='enable') : ?>
 <?php endif; ?>
 
 <?php
-$header = lingomoj_get_option('lingomoj_header_options');
+
 $select_header = $header[0]['lingomoj_header_select_option'];
 $header_button = $header[0]['lingomoj_header_button_option'];
 $button_text = $header[0]['lingomoj_text_button_header_option'];

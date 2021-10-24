@@ -96,7 +96,32 @@
 
                 </div>
             </div>
-            <?php get_sidebar() ?>
+            <?php
+            $blog = lingomoj_get_option('lingomoj_blog_options');
+            $side_blog = $blog[0]['lingomoj_blog_sidebar_option'];
+
+            if ($side_blog!='full-width') {
+                get_sidebar();
+
+                if ($side_blog=='side-right') {
+                    ?>
+                    <style>
+                        .sidebar {float: right !important;}
+                        .main-single {float: left !important;}
+                    </style>
+                    <?php
+                }
+            }
+            else {
+                ?>
+                <style>
+                    .main-single {width: 100% !important;}
+                </style>
+                <?php
+            }
+
+
+            ?>
         </div>
     </div>
 

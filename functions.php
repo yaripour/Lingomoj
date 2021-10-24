@@ -14,7 +14,10 @@ function add_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
 function add_admin_scripts(){
+    wp_enqueue_style('select-img' , get_template_directory_uri() . '/css/image_select_metafield.css' , array() , false , 'all');
     wp_enqueue_script('conditional' , get_template_directory_uri() . '/js/cmb2-conditional-logic.min.js' , array('jquery') , false , true);
+    wp_enqueue_script('img-select' , get_template_directory_uri() . '/js/img-select.js' , array('jquery') , false , true);
+
 }
 
 add_action( 'admin_enqueue_scripts', 'add_admin_scripts' );
@@ -148,5 +151,5 @@ require_once 'inc/product-video-metabox.php';
 require_once 'inc/teacher-product.php';
 require_once 'inc/lesson.php';
 require_once 'theme-options/settings.php';
-
+require_once 'theme-options/image-select.php';
 ?>

@@ -21,7 +21,15 @@
 
     </div>
     <div class="copy-right">
+        <?php
+        $footer = lingomoj_get_option('lingomoj_footer_options');
+        $copyright = $footer[0]['lingomoj_footer_copyright_option'];
+        if (isset($copyright)) {
+            echo "<p>$copyright</p>";
+        }
+        else { ?>
         <p>تمامی حقوق سایت برای مای لینگوتیم محفوظ است و کپی برداری تنها با ذکر منبع آزاد است </p>
+        <?php } ?>
         <div class="social-media">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
