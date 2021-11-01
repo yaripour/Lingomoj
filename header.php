@@ -112,6 +112,9 @@
         }
  ?>
     </style>
+    <script>
+        var $ = jQuery;
+    </script>
 </head>
 <body>
 <?php
@@ -191,6 +194,7 @@ $button_link = $header[0]['lingomoj_link_button_header_option'];
         </div>
 
     </div>
+
 </header>
 <?php }
 
@@ -239,3 +243,4 @@ else { ?>
     </nav>
 </div>
     <?php } ?>
+<div class="element-section">

@@ -43,6 +43,12 @@ a {
     transition: all .2s ease-in-out;
     text-decoration: none;
 }
+.element-section {
+    float: right;
+    width: 100%;
+    background: #FFFFFF;
+
+}
 .nopadding {
     padding: 0 !important;
 }

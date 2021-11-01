@@ -152,4 +152,5 @@ require_once 'inc/teacher-product.php';
 require_once 'inc/lesson.php';
 require_once 'theme-options/settings.php';
 require_once 'theme-options/image-select.php';
+require_once 'elementor/lingomoj-elementor.php';
 ?>
